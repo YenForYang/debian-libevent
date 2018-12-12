@@ -1,0 +1,62 @@
+Format: 1.8
+Date: Mon, 31 Jul 2017 18:13:49 +0200
+Source: libevent
+Binary: libevent-dev libevent-2.1-6 libevent-core-2.1-6 libevent-extra-2.1-6 libevent-pthreads-2.1-6 libevent-openssl-2.1-6
+Built-For-Profiles: nobiarch nocheck nodoc
+Architecture: amd64
+Version: 2.1.8-stable-4
+Distribution: unstable
+Urgency: medium
+Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+Changed-By: Balint Reczey <rbalint@ubuntu.com>
+Description:
+ libevent-2.1-6 - Asynchronous event notification library
+ libevent-core-2.1-6 - Asynchronous event notification library (core)
+ libevent-dev - Asynchronous event notification library (development files)
+ libevent-extra-2.1-6 - Asynchronous event notification library (extra)
+ libevent-openssl-2.1-6 - Asynchronous event notification library (openssl)
+ libevent-pthreads-2.1-6 - Asynchronous event notification library (pthreads)
+Closes: 869900
+Changes:
+ libevent (2.1.8-stable-4) unstable; urgency=medium
+ .
+   * Don't link all libraries with -lcrypto (Closes: #869900)
+Checksums-Sha1:
+ 5a36e35601471562267c5206a2ea43156b8cfebb 345928 libevent-2.1-6-dbgsym_2.1.8-stable-4_amd64.deb
+ 77f48c133e1097a13075714400b99081a421cfb8 234520 libevent-2.1-6_2.1.8-stable-4_amd64.deb
+ d57030cdcaca7722aaa9e029fc14d3f1db4d72d4 201368 libevent-core-2.1-6-dbgsym_2.1.8-stable-4_amd64.deb
+ 65247aed3162d9984bb46e2d0c3648df60f33aee 155564 libevent-core-2.1-6_2.1.8-stable-4_amd64.deb
+ aa09601568f627e784b1c75951a9ec3a1d2ae9bf 4143912 libevent-dev_2.1.8-stable-4_amd64.deb
+ b9d3a2bfa9ce11d456b764d0f027c24585df67c7 113520 libevent-extra-2.1-6-dbgsym_2.1.8-stable-4_amd64.deb
+ 7a0c5f244422aaef18f09ce88cc281a0666cb0b8 120980 libevent-extra-2.1-6_2.1.8-stable-4_amd64.deb
+ e164246888f06a2231a5f04391c8d5bb1a5b43b8 17128 libevent-openssl-2.1-6-dbgsym_2.1.8-stable-4_amd64.deb
+ 8db8ba0fe2184b407f1077ae8f75c49c2575e809 57072 libevent-openssl-2.1-6_2.1.8-stable-4_amd64.deb
+ ab443e6c5ecb54317a8d25ec48fce942cdb4af17 5556 libevent-pthreads-2.1-6-dbgsym_2.1.8-stable-4_amd64.deb
+ 67bbbff917c4a92f5680b0c17a4db335381cc696 47852 libevent-pthreads-2.1-6_2.1.8-stable-4_amd64.deb
+ 87695f05ea93bad33b05bf081b4a472067024afc 8272 libevent_2.1.8-stable-4_amd64.buildinfo
+Checksums-Sha256:
+ f5328504b1781cc44214687b288fe41a70dfd944242df82a232aca8d010dea05 345928 libevent-2.1-6-dbgsym_2.1.8-stable-4_amd64.deb
+ 05d2f17cb2559aad36dc9a4a65c4275bc86ebf8de584e27e9984eb83d0a85309 234520 libevent-2.1-6_2.1.8-stable-4_amd64.deb
+ 63ce4ca1adabf4ab33c654463828efc1a81b891db94279023ec00bd936fb8d2a 201368 libevent-core-2.1-6-dbgsym_2.1.8-stable-4_amd64.deb
+ 82a9c19b83cc7936d7f87202180c521b3ebee1a1f44e86ed84680f8042873c34 155564 libevent-core-2.1-6_2.1.8-stable-4_amd64.deb
+ e8e4ebebbd335498943cf6e6f899c68fa269dcb1c4139947c19a06cbc0f13df1 4143912 libevent-dev_2.1.8-stable-4_amd64.deb
+ cdffcc07a896a2a2043754081d14853d9bf885f1c91560c3001b185d5ce6487d 113520 libevent-extra-2.1-6-dbgsym_2.1.8-stable-4_amd64.deb
+ 8c6c18faf25526ec764db0525b422a99ea1f7aece820cc387716b6e20fd1536c 120980 libevent-extra-2.1-6_2.1.8-stable-4_amd64.deb
+ bc8d5b99933685e50b36746c5fdbed4e7bb45aa74c3bcfe41ee0cd725a060d7c 17128 libevent-openssl-2.1-6-dbgsym_2.1.8-stable-4_amd64.deb
+ 6cfe635f61b2826026d1923d752b700d8dc0b1456dce1e6dd27b650cca1d143a 57072 libevent-openssl-2.1-6_2.1.8-stable-4_amd64.deb
+ aa417bac1a1dbb62ea977a31c57dff20e19a123af5a14e351ee8bc1686833637 5556 libevent-pthreads-2.1-6-dbgsym_2.1.8-stable-4_amd64.deb
+ b400a7dbc4a41f32f02e0f307dd8c0948543da63051f768c0834457ff896f58e 47852 libevent-pthreads-2.1-6_2.1.8-stable-4_amd64.deb
+ 8a7507f7e800d8c27171c3b43d9e40f850d6665c734945e1df8b29227e552655 8272 libevent_2.1.8-stable-4_amd64.buildinfo
+Files:
+ 61c3fa5f7c56f557dc5deb2e510468bd 345928 debug optional libevent-2.1-6-dbgsym_2.1.8-stable-4_amd64.deb
+ f69f7f550d8c24e0b7bf92e669757e4d 234520 libs standard libevent-2.1-6_2.1.8-stable-4_amd64.deb
+ ce8abe2ffce3ad0b9d50af9475719688 201368 debug optional libevent-core-2.1-6-dbgsym_2.1.8-stable-4_amd64.deb
+ aa8aa8e78ab5f5edc190fe1e721c4de4 155564 libs optional libevent-core-2.1-6_2.1.8-stable-4_amd64.deb
+ 9f410650789ae4e6ac0d36824a1436e8 4143912 libdevel optional libevent-dev_2.1.8-stable-4_amd64.deb
+ e8f8cdd0506001e903ddb6c46b38b81f 113520 debug optional libevent-extra-2.1-6-dbgsym_2.1.8-stable-4_amd64.deb
+ f791ed56e123b73621e082338824db34 120980 libs optional libevent-extra-2.1-6_2.1.8-stable-4_amd64.deb
+ 259aaefe7d2ec8e695c5b622a7c23e8e 17128 debug optional libevent-openssl-2.1-6-dbgsym_2.1.8-stable-4_amd64.deb
+ b84ab25048f1fcca48ea8f8882eadf85 57072 libs optional libevent-openssl-2.1-6_2.1.8-stable-4_amd64.deb
+ 7d1ae433586854aaf76895198c12132f 5556 debug optional libevent-pthreads-2.1-6-dbgsym_2.1.8-stable-4_amd64.deb
+ 6322a6b6c1fb553f97a6f37659553dd7 47852 libs optional libevent-pthreads-2.1-6_2.1.8-stable-4_amd64.deb
+ e30af4e196ae920758b110a5f3fa7c12 8272 libs optional libevent_2.1.8-stable-4_amd64.buildinfo

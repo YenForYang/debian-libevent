@@ -1,0 +1,12 @@
+libevent-2.1-6-dbgsym_2.1.8-stable-4_amd64.deb debug optional automatic=yes
+libevent-2.1-6_2.1.8-stable-4_amd64.deb libs standard
+libevent-core-2.1-6-dbgsym_2.1.8-stable-4_amd64.deb debug optional automatic=yes
+libevent-core-2.1-6_2.1.8-stable-4_amd64.deb libs optional
+libevent-dev_2.1.8-stable-4_amd64.deb libdevel optional
+libevent-extra-2.1-6-dbgsym_2.1.8-stable-4_amd64.deb debug optional automatic=yes
+libevent-extra-2.1-6_2.1.8-stable-4_amd64.deb libs optional
+libevent-openssl-2.1-6-dbgsym_2.1.8-stable-4_amd64.deb debug optional automatic=yes
+libevent-openssl-2.1-6_2.1.8-stable-4_amd64.deb libs optional
+libevent-pthreads-2.1-6-dbgsym_2.1.8-stable-4_amd64.deb debug optional automatic=yes
+libevent-pthreads-2.1-6_2.1.8-stable-4_amd64.deb libs optional
+libevent_2.1.8-stable-4_amd64.buildinfo libs optional

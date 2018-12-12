@@ -1,0 +1,1715 @@
+ dpkg-buildpackage -D -us -uc -ui -b -Jauto -Pnobiarch,nocheck,nodoc
+dpkg-buildpackage: info: source package libevent
+dpkg-buildpackage: info: source version 2.1.8-stable-4
+dpkg-buildpackage: info: source distribution unstable
+dpkg-buildpackage: info: source changed by Balint Reczey <rbalint@ubuntu.com>
+ dpkg-source --before-build .
+dpkg-buildpackage: info: host architecture amd64
+ fakeroot debian/rules clean
+dh clean
+   dh_auto_clean
+	make -j8 distclean
+make[1]: Entering directory '/dev/shm/libevent/libevent-2.1.8-stable'
+test -z "test/rpcgen-attempted" || rm -f test/rpcgen-attempted
+test -z "libevent.la libevent_core.la libevent_extra.la libevent_pthreads.la libevent_openssl.la" || rm -f libevent.la libevent_core.la libevent_extra.la libevent_pthreads.la libevent_openssl.la
+rm -rf .libs _libs
+test -z "" || rm -f 
+rm -f *.o
+test -z "test_runner_epoll.log test_runner_select.log test_runner_kqueue.log test_runner_evport.log test_runner_devpoll.log test_runner_poll.log test_runner_win32.log test_runner_timerfd.log test_runner_changelist.log test_runner_timerfd_changelist.log" || rm -f test_runner_epoll.log test_runner_select.log test_runner_kqueue.log test_runner_evport.log test_runner_devpoll.log test_runner_poll.log test_runner_win32.log test_runner_timerfd.log test_runner_changelist.log test_runner_timerfd_changelist.log
+rm -f *.lo
+ rm -f sample/dns-example sample/event-read-fifo sample/hello-world sample/http-server sample/http-connect sample/signal-test sample/time-test sample/le-proxy sample/https-client
+rm -f *.tab.c
+test -z "libevent.pc libevent_openssl.pc libevent_pthreads.pc libevent_core.pc libevent_extra.pc" || rm -f libevent.pc libevent_openssl.pc libevent_pthreads.pc libevent_core.pc libevent_extra.pc
+test -z "test_runner_epoll.trs test_runner_select.trs test_runner_kqueue.trs test_runner_evport.trs test_runner_devpoll.trs test_runner_poll.trs test_runner_win32.trs test_runner_timerfd.trs test_runner_changelist.trs test_runner_timerfd_changelist.trs" || rm -f test_runner_epoll.trs test_runner_select.trs test_runner_kqueue.trs test_runner_evport.trs test_runner_devpoll.trs test_runner_poll.trs test_runner_win32.trs test_runner_timerfd.trs test_runner_changelist.trs test_runner_timerfd_changelist.trs
+rm -rf sample/.libs sample/_libs
+rm -f config.h stamp-h1 evconfig-private.h stamp-h2
+rm -f libtool config.lt
+rm -f sample/*.o
+test . = "." || test -z "" || rm -f 
+test -z "test-suite.log" || rm -f test-suite.log
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+rm -rf test/.libs test/_libs
+rm -f ./so_locations
+rm -f sample/.deps/.dirstamp
+rm -f test/*.o
+rm -f sample/.dirstamp
+rm -f cscope.out cscope.in.out cscope.po.out cscope.files
+rm -f test/.deps/.dirstamp
+rm -f test/.dirstamp
+test -z "test/regress.gen.c test/regress.gen.h *~ libevent.pc libevent_core.pc libevent_extra.pc ./include/event2/event-config.h" || rm -f test/regress.gen.c test/regress.gen.h *~ libevent.pc libevent_core.pc libevent_extra.pc ./include/event2/event-config.h
+rm -f config.status config.cache config.log configure.lineno config.status.lineno
+rm -f .deps/epoll_sub.Plo
+rm -f ./.deps/buffer.Plo
+rm -f ./.deps/buffer_iocp.Plo
+rm -f ./.deps/bufferevent.Plo
+rm -f ./.deps/bufferevent_async.Plo
+rm -f ./.deps/bufferevent_filter.Plo
+rm -f ./.deps/bufferevent_pair.Plo
+rm -f ./.deps/bufferevent_ratelim.Plo
+rm -f ./.deps/bufferevent_sock.Plo
+rm -f ./.deps/devpoll.Plo
+rm -f ./.deps/epoll.Plo
+rm -f ./.deps/evdns.Plo
+rm -f ./.deps/event.Plo
+rm -f ./.deps/event_iocp.Plo
+rm -f ./.deps/event_tagging.Plo
+rm -f ./.deps/evmap.Plo
+rm -f ./.deps/evport.Plo
+rm -f ./.deps/evrpc.Plo
+rm -f ./.deps/evthread.Plo
+rm -f ./.deps/evthread_pthread.Plo
+rm -f ./.deps/evthread_win32.Plo
+rm -f ./.deps/evutil.Plo
+rm -f ./.deps/evutil_rand.Plo
+rm -f ./.deps/evutil_time.Plo
+rm -f ./.deps/http.Plo
+rm -f ./.deps/kqueue.Plo
+rm -f ./.deps/libevent_openssl_la-bufferevent_openssl.Plo
+rm -f ./.deps/listener.Plo
+rm -f ./.deps/log.Plo
+rm -f ./.deps/poll.Plo
+rm -f ./.deps/select.Plo
+rm -f ./.deps/signal.Plo
+rm -f ./.deps/strlcpy.Plo
+rm -f ./.deps/win32select.Plo
+rm -f sample/.deps/dns-example.Po
+rm -f sample/.deps/event-read-fifo.Po
+rm -f sample/.deps/hello-world.Po
+rm -f sample/.deps/hostcheck.Po
+rm -f sample/.deps/http-connect.Po
+rm -f sample/.deps/http-server.Po
+rm -f sample/.deps/https-client.Po
+rm -f sample/.deps/le-proxy.Po
+rm -f sample/.deps/openssl_hostname_validation.Po
+rm -f sample/.deps/signal-test.Po
+rm -f sample/.deps/time-test.Po
+rm -f test/.deps/bench.Po
+rm -f test/.deps/bench_cascade.Po
+rm -f test/.deps/bench_http.Po
+rm -f test/.deps/bench_httpclient.Po
+rm -f test/.deps/regress-regress.Po
+rm -f test/.deps/regress-regress.gen.Po
+rm -f test/.deps/regress-regress_buffer.Po
+rm -f test/.deps/regress-regress_bufferevent.Po
+rm -f test/.deps/regress-regress_dns.Po
+rm -f test/.deps/regress-regress_et.Po
+rm -f test/.deps/regress-regress_finalize.Po
+rm -f test/.deps/regress-regress_http.Po
+rm -f test/.deps/regress-regress_iocp.Po
+rm -f test/.deps/regress-regress_listener.Po
+rm -f test/.deps/regress-regress_main.Po
+rm -f test/.deps/regress-regress_minheap.Po
+rm -f test/.deps/regress-regress_rpc.Po
+rm -f test/.deps/regress-regress_ssl.Po
+rm -f test/.deps/regress-regress_testutils.Po
+rm -f test/.deps/regress-regress_thread.Po
+rm -f test/.deps/regress-regress_util.Po
+rm -f test/.deps/regress-regress_zlib.Po
+rm -f test/.deps/regress-tinytest.Po
+rm -f test/.deps/test-changelist.Po
+rm -f test/.deps/test-closed.Po
+rm -f test/.deps/test-dumpevents.Po
+rm -f test/.deps/test-eof.Po
+rm -f test/.deps/test-fdleak.Po
+rm -f test/.deps/test-init.Po
+rm -f test/.deps/test-ratelim.Po
+rm -f test/.deps/test-time.Po
+rm -f test/.deps/test-weof.Po
+rm -f Makefile
+make[1]: Leaving directory '/dev/shm/libevent/libevent-2.1.8-stable'
+   dh_autoreconf_clean
+   dh_clean
+FAKEROOTKEY=957536507 LD_LIBRARY_PATH=:/opt/intel/lib/intel64_lin:/opt/intel/tbb/lib/intel64/gcc4.7 LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libfakeroot/libfakeroot-sysv.so debian/rules clean
+ debian/rules build
+dh build
+   dh_update_autotools_config
+   dh_autoreconf
+libtoolize: putting auxiliary files in '.'.
+libtoolize: copying file './ltmain.sh'
+libtoolize: putting macros in AC_CONFIG_MACRO_DIRS, 'm4'.
+libtoolize: copying file 'm4/libtool.m4'
+libtoolize: copying file 'm4/ltoptions.m4'
+libtoolize: copying file 'm4/ltsugar.m4'
+libtoolize: copying file 'm4/ltversion.m4'
+libtoolize: copying file 'm4/lt~obsolete.m4'
+configure.ac:25: installing './compile'
+configure.ac:13: installing './install-sh'
+configure.ac:13: installing './missing'
+Makefile.am: installing './depcomp'
+parallel-tests: installing './test-driver'
+   debian/rules override_dh_auto_configure
+make[1]: Entering directory '/dev/shm/libevent/libevent-2.1.8-stable'
+dh_auto_configure -- \
+	--disable-libevent-regress \
+	CFLAGS="-g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe" CPPFLAGS="-Wdate-time -D_FORTIFY_SOURCE=2" CXXFLAGS="-g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe" FCFLAGS="-g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong" FFLAGS="-g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong" GCJFLAGS="-g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong" LDFLAGS="-Wl,-z,relro -Wl,-z,now -Wl,--as-needed,--gc-sections,--relax -Wl,--as-needed" OBJCFLAGS="-g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security" OBJCXXFLAGS="-g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security" 
+	./configure --build=x86_64-linux-gnu --prefix=/usr --includedir=\${prefix}/include --mandir=\${prefix}/share/man --infodir=\${prefix}/share/info --sysconfdir=/etc --localstatedir=/var --disable-silent-rules --libdir=\${prefix}/lib/x86_64-linux-gnu --libexecdir=\${prefix}/lib/x86_64-linux-gnu --disable-maintainer-mode --disable-dependency-tracking --disable-libevent-regress "CFLAGS=-g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe" "CPPFLAGS=-Wdate-time -D_FORTIFY_SOURCE=2" "CXXFLAGS=-g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe" "FCFLAGS=-g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong" "FFLAGS=-g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong" "GCJFLAGS=-g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong" "LDFLAGS=-Wl,-z,relro -Wl,-z,now -Wl,--as-needed,--gc-sections,--relax -Wl,--as-needed" "OBJCFLAGS=-g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security" "OBJCXXFLAGS=-g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security"
+configure: WARNING: unrecognized options: --disable-maintainer-mode
+configure: loading site script /usr/share/config.site
+checking for a BSD-compatible install... /usr/bin/install
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... (cached) gawk
+checking whether make sets $(MAKE)... (cached) yes
+checking whether make supports nested variables... (cached) yes
+checking whether make supports nested variables... (cached) yes
+checking whether make supports the include directive... yes (GNU style)
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... (cached) o
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether icc accepts -g... (cached) yes
+checking for icc option to accept ISO C89... none needed
+checking whether icc understands -c and -o together... (cached) yes
+checking dependency style of icc... (cached) gcc3
+checking how to run the C preprocessor... icc -E
+checking for grep that handles long lines and -e... (cached) /bin/grep
+checking for egrep... (cached) /bin/grep -E
+checking for ANSI C header files... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for memory.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking minix/config.h usability... no
+checking minix/config.h presence... no
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... (cached) yes
+checking build system type... (cached) x86_64-pc-linux-gnu
+checking host system type... (cached) x86_64-pc-linux-gnu
+checking whether ln -s works... yes
+checking for a sed that does not truncate output... (cached) /bin/sed
+checking whether icc needs -traditional... no
+checking how to print strings... printf
+checking for a sed that does not truncate output... (cached) /bin/sed
+checking for fgrep... (cached) /bin/grep -F
+checking for ld used by icc... (cached) xild -m elf_x86_64
+checking if the linker (xild -m elf_x86_64) is GNU ld... (cached) yes
+checking for BSD- or MS-compatible name lister (nm)... (cached) /usr/bin/x86_64-linux-gnu-nm -B
+checking the name lister (/usr/bin/x86_64-linux-gnu-nm -B) interface... (cached) BSD nm
+checking the maximum length of command line arguments... (cached) 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for xild -m elf_x86_64 option to reload object files... (cached) -r
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... (cached) dlltool
+checking how to associate runtime and link libraries... (cached) printf %s\n
+checking for archiver @FILE support... (cached) @
+checking for strip... (cached) x86_64-linux-gnu-strip
+checking for ranlib... (cached) /usr/bin/x86_64-linux-gnu-ranlib
+checking command to parse /usr/bin/x86_64-linux-gnu-nm -B output from icc object... ok
+checking for sysroot... no
+checking for a working dd... (cached) /bin/dd
+checking how to truncate binary pipes... /bin/dd bs=4096 count=1
+checking for mt... (cached) mt
+checking if mt is a manifest tool... no
+checking for dlfcn.h... (cached) yes
+checking for objdir... (cached) .libs
+checking if icc supports -fno-rtti -fno-exceptions... (cached) yes
+checking for icc option to produce PIC... (cached) -fpic
+checking if icc PIC flag -fpic works... (cached) yes
+checking if icc static flag -static works... (cached) yes
+checking if icc supports -c -o file.o... (cached) yes
+checking if icc supports -c -o file.o... (cached) yes
+checking whether the icc linker (xild -m elf_x86_64 -m elf_x86_64) supports shared libraries... xild: warning #10013: no objects specified for multi-file optimization
+xild: executing 'ld'
+yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking for library containing inet_ntoa... none required
+checking for library containing socket... none required
+checking for library containing inet_aton... none required
+checking for library containing clock_gettime... none required
+checking for clock_gettime... (cached) yes
+checking for library containing sendfile... none required
+checking for WIN32... no
+checking for CYGWIN... no
+checking for zlib.h... (cached) yes
+checking for library containing inflateEnd... -lz
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking if pkg-config is at least version 0.15.0... yes
+checking for arpa/inet.h... (cached) yes
+checking for fcntl.h... (cached) yes
+checking for ifaddrs.h... (cached) yes
+checking mach/mach_time.h usability... no
+checking mach/mach_time.h presence... no
+checking for mach/mach_time.h... no
+checking for netdb.h... (cached) yes
+checking for netinet/in.h... (cached) yes
+checking netinet/in6.h usability... no
+checking netinet/in6.h presence... no
+checking for netinet/in6.h... no
+checking for netinet/tcp.h... (cached) yes
+checking for poll.h... (cached) yes
+checking port.h usability... no
+checking port.h presence... no
+checking for port.h... no
+checking for stdarg.h... (cached) yes
+checking for stddef.h... (cached) yes
+checking sys/devpoll.h usability... no
+checking sys/devpoll.h presence... no
+checking for sys/devpoll.h... no
+checking for sys/epoll.h... (cached) yes
+checking sys/event.h usability... no
+checking sys/event.h presence... no
+checking for sys/event.h... no
+checking sys/eventfd.h usability... yes
+checking sys/eventfd.h presence... yes
+checking for sys/eventfd.h... yes
+checking for sys/ioctl.h... (cached) yes
+checking for sys/mman.h... (cached) yes
+checking for sys/param.h... (cached) yes
+checking sys/queue.h usability... yes
+checking sys/queue.h presence... yes
+checking for sys/queue.h... yes
+checking for sys/resource.h... (cached) yes
+checking for sys/select.h... (cached) yes
+checking for sys/sendfile.h... (cached) yes
+checking for sys/socket.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for sys/time.h... (cached) yes
+checking sys/timerfd.h usability... yes
+checking sys/timerfd.h presence... yes
+checking for sys/timerfd.h... yes
+checking for sys/uio.h... (cached) yes
+checking for sys/wait.h... (cached) yes
+checking for errno.h... (cached) yes
+checking for sys/sysctl.h... (cached) yes
+checking for TAILQ_FOREACH in sys/queue.h... yes
+checking for timeradd in sys/time.h... yes
+checking for timercmp in sys/time.h... yes
+checking for timerclear in sys/time.h... yes
+checking for timerisset in sys/time.h... yes
+checking whether CTL_KERN is declared... yes
+checking whether KERN_RANDOM is declared... yes
+checking whether RANDOM_UUID is declared... yes
+checking whether KERN_ARND is declared... no
+checking for an ANSI C-conforming const... (cached) yes
+checking for inline... (cached) inline
+checking whether time.h and sys/time.h may both be included... (cached) yes
+checking for accept4... yes
+checking for arc4random... no
+checking for arc4random_buf... no
+checking for eventfd... yes
+checking for epoll_create1... yes
+checking for fcntl... (cached) yes
+checking for getegid... (cached) yes
+checking for geteuid... (cached) yes
+checking for getifaddrs... (cached) yes
+checking for getnameinfo... (cached) yes
+checking for getprotobynumber... yes
+checking for gettimeofday... (cached) yes
+checking for inet_ntop... (cached) yes
+checking for inet_pton... (cached) yes
+checking for issetugid... no
+checking for mach_absolute_time... no
+checking for mmap... (cached) yes
+checking for nanosleep... (cached) yes
+checking for pipe... (cached) yes
+checking for pipe2... yes
+checking for putenv... (cached) yes
+checking for sendfile... (cached) yes
+checking for setenv... (cached) yes
+checking for setrlimit... (cached) yes
+checking for sigaction... (cached) yes
+checking for signal... (cached) yes
+checking for splice... yes
+checking for strlcpy... no
+checking for strsep... (cached) yes
+checking for strtok_r... (cached) yes
+checking for strtoll... (cached) yes
+checking for sysctl... (cached) yes
+checking for timerfd_create... yes
+checking for umask... (cached) yes
+checking for unsetenv... (cached) yes
+checking for usleep... (cached) yes
+checking for vasprintf... (cached) yes
+checking for getservbyname... (cached) yes
+checking for getaddrinfo... yes
+checking for F_SETFD in fcntl.h... yes
+checking for select... (cached) yes
+checking for poll... (cached) yes
+checking for epoll_ctl... yes
+checking waitpid support WNOWAIT... no
+checking for port_create... no
+checking for pid_t... (cached) yes
+checking for size_t... (cached) yes
+checking for ssize_t... (cached) yes
+checking for uint64_t... yes
+checking for uint32_t... yes
+checking for uint16_t... yes
+checking for uint8_t... yes
+checking for uintptr_t... (cached) yes
+checking for fd_mask... yes
+checking size of long long... 8
+checking size of long... (cached) 8
+checking size of int... (cached) 4
+checking size of short... (cached) 2
+checking size of size_t... (cached) 8
+checking size of void *... (cached) 8
+checking size of off_t... (cached) 8
+checking for struct in6_addr... yes
+checking for struct sockaddr_in6... yes
+checking for sa_family_t... (cached) yes
+checking for struct addrinfo... (cached) yes
+checking for struct sockaddr_storage... (cached) yes
+checking for struct in6_addr.s6_addr32... yes
+checking for struct in6_addr.s6_addr16... yes
+checking for struct sockaddr_in.sin_len... no
+checking for struct sockaddr_in6.sin6_len... no
+checking for struct sockaddr_storage.ss_family... (cached) yes
+checking for struct sockaddr_storage.__ss_family... no
+checking for struct so_linger... no
+checking for socklen_t... yes
+checking whether our compiler supports __func__... yes
+checking for the pthreads library -lpthreads... no
+checking whether pthreads work without any flags... yes
+checking for joinable pthread attribute... PTHREAD_CREATE_JOINABLE
+checking if more special flags are required for pthreads... no
+checking size of pthread_t... (cached) 8
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating libevent.pc
+config.status: creating libevent_openssl.pc
+config.status: creating libevent_pthreads.pc
+config.status: creating libevent_core.pc
+config.status: creating libevent_extra.pc
+config.status: creating Makefile
+config.status: creating config.h
+config.status: creating evconfig-private.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+configure: WARNING: unrecognized options: --disable-maintainer-mode
+make[1]: Leaving directory '/dev/shm/libevent/libevent-2.1.8-stable'
+   dh_auto_build
+	make -j8
+make[1]: Entering directory '/dev/shm/libevent/libevent-2.1.8-stable'
+test -d include/event2 || /bin/mkdir -p include/event2
+/bin/sed -f ./make-event-config.sed < config.h > include/event2/event-config.hT
+mv -f include/event2/event-config.hT include/event2/event-config.h
+make  all-am
+make[2]: Entering directory '/dev/shm/libevent/libevent-2.1.8-stable'
+/bin/bash ./libtool  --tag=CC   --mode=compile icc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include  -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c -o buffer.lo buffer.c
+/bin/bash ./libtool  --tag=CC   --mode=compile icc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include  -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c -o bufferevent.lo bufferevent.c
+/bin/bash ./libtool  --tag=CC   --mode=compile icc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include  -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c -o bufferevent_filter.lo bufferevent_filter.c
+/bin/bash ./libtool  --tag=CC   --mode=compile icc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include  -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c -o bufferevent_pair.lo bufferevent_pair.c
+/bin/bash ./libtool  --tag=CC   --mode=compile icc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include  -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c -o bufferevent_ratelim.lo bufferevent_ratelim.c
+/bin/bash ./libtool  --tag=CC   --mode=compile icc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include  -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c -o bufferevent_sock.lo bufferevent_sock.c
+/bin/bash ./libtool  --tag=CC   --mode=compile icc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include  -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c -o event.lo event.c
+/bin/bash ./libtool  --tag=CC   --mode=compile icc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include  -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c -o evmap.lo evmap.c
+libtool: compile:  icc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -Wdate-time -D_FORTIFY_SOURCE=2 -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c buffer.c  -fpic -o .libs/buffer.o
+libtool: compile:  icc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -Wdate-time -D_FORTIFY_SOURCE=2 -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c bufferevent_filter.c  -fpic -o .libs/bufferevent_filter.o
+libtool: compile:  icc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -Wdate-time -D_FORTIFY_SOURCE=2 -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c bufferevent_pair.c  -fpic -o .libs/bufferevent_pair.o
+libtool: compile:  icc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -Wdate-time -D_FORTIFY_SOURCE=2 -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c bufferevent.c  -fpic -o .libs/bufferevent.o
+libtool: compile:  icc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -Wdate-time -D_FORTIFY_SOURCE=2 -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c evmap.c  -fpic -o .libs/evmap.o
+libtool: compile:  icc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -Wdate-time -D_FORTIFY_SOURCE=2 -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c bufferevent_ratelim.c  -fpic -o .libs/bufferevent_ratelim.o
+libtool: compile:  icc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -Wdate-time -D_FORTIFY_SOURCE=2 -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c bufferevent_sock.c  -fpic -o .libs/bufferevent_sock.o
+libtool: compile:  icc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -Wdate-time -D_FORTIFY_SOURCE=2 -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c event.c  -fpic -o .libs/event.o
+libtool: compile:  icc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -Wdate-time -D_FORTIFY_SOURCE=2 -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c bufferevent_pair.c -o bufferevent_pair.o >/dev/null 2>&1
+libtool: compile:  icc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -Wdate-time -D_FORTIFY_SOURCE=2 -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c bufferevent_filter.c -o bufferevent_filter.o >/dev/null 2>&1
+buffer.c(2619): warning #2338: this switch statement does not have a default clause
+  	switch (how) {
+  	^
+
+libtool: compile:  icc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -Wdate-time -D_FORTIFY_SOURCE=2 -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c bufferevent_sock.c -o bufferevent_sock.o >/dev/null 2>&1
+event.c(3695): warning #3179: deprecated conversion of string literal to char* (should be const char*)
+  	    "sig" : "fd ";
+  	          ^
+
+event.c(3728): warning #3179: deprecated conversion of string literal to char* (should be const char*)
+  	    "sig" : "fd ";
+  	          ^
+
+libtool: compile:  icc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -Wdate-time -D_FORTIFY_SOURCE=2 -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c evmap.c -o evmap.o >/dev/null 2>&1
+libtool: compile:  icc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -Wdate-time -D_FORTIFY_SOURCE=2 -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c bufferevent.c -o bufferevent.o >/dev/null 2>&1
+libtool: compile:  icc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -Wdate-time -D_FORTIFY_SOURCE=2 -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c bufferevent_ratelim.c -o bufferevent_ratelim.o >/dev/null 2>&1
+/bin/bash ./libtool  --tag=CC   --mode=compile icc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include  -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c -o evthread.lo evthread.c
+libtool: compile:  icc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -Wdate-time -D_FORTIFY_SOURCE=2 -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c buffer.c -o buffer.o >/dev/null 2>&1
+/bin/bash ./libtool  --tag=CC   --mode=compile icc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include  -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c -o evutil.lo evutil.c
+/bin/bash ./libtool  --tag=CC   --mode=compile icc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include  -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c -o evutil_rand.lo evutil_rand.c
+libtool: compile:  icc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -Wdate-time -D_FORTIFY_SOURCE=2 -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c event.c -o event.o >/dev/null 2>&1
+/bin/bash ./libtool  --tag=CC   --mode=compile icc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include  -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c -o evutil_time.lo evutil_time.c
+/bin/bash ./libtool  --tag=CC   --mode=compile icc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include  -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c -o listener.lo listener.c
+libtool: compile:  icc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -Wdate-time -D_FORTIFY_SOURCE=2 -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c evthread.c  -fpic -o .libs/evthread.o
+/bin/bash ./libtool  --tag=CC   --mode=compile icc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include  -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c -o log.lo log.c
+libtool: compile:  icc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -Wdate-time -D_FORTIFY_SOURCE=2 -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c evutil.c  -fpic -o .libs/evutil.o
+libtool: compile:  icc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -Wdate-time -D_FORTIFY_SOURCE=2 -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c evutil_rand.c  -fpic -o .libs/evutil_rand.o
+libtool: compile:  icc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -Wdate-time -D_FORTIFY_SOURCE=2 -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c evutil_time.c  -fpic -o .libs/evutil_time.o
+libtool: compile:  icc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -Wdate-time -D_FORTIFY_SOURCE=2 -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c listener.c  -fpic -o .libs/listener.o
+libtool: compile:  icc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -Wdate-time -D_FORTIFY_SOURCE=2 -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c log.c  -fpic -o .libs/log.o
+libtool: compile:  icc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -Wdate-time -D_FORTIFY_SOURCE=2 -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c evthread.c -o evthread.o >/dev/null 2>&1
+evutil.c(2477): warning #2338: this switch statement does not have a default clause
+  	switch(c)
+  	^
+
+/bin/bash ./libtool  --tag=CC   --mode=compile icc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include  -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c -o strlcpy.lo strlcpy.c
+libtool: compile:  icc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -Wdate-time -D_FORTIFY_SOURCE=2 -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c evutil_rand.c -o evutil_rand.o >/dev/null 2>&1
+libtool: compile:  icc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -Wdate-time -D_FORTIFY_SOURCE=2 -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c evutil_time.c -o evutil_time.o >/dev/null 2>&1
+libtool: compile:  icc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -Wdate-time -D_FORTIFY_SOURCE=2 -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c log.c -o log.o >/dev/null 2>&1
+libtool: compile:  icc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -Wdate-time -D_FORTIFY_SOURCE=2 -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c evutil.c -o evutil.o >/dev/null 2>&1
+libtool: compile:  icc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -Wdate-time -D_FORTIFY_SOURCE=2 -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c listener.c -o listener.o >/dev/null 2>&1
+/bin/bash ./libtool  --tag=CC   --mode=compile icc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include  -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c -o select.lo select.c
+libtool: compile:  icc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -Wdate-time -D_FORTIFY_SOURCE=2 -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c strlcpy.c  -fpic -o .libs/strlcpy.o
+/bin/bash ./libtool  --tag=CC   --mode=compile icc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include  -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c -o poll.lo poll.c
+/bin/bash ./libtool  --tag=CC   --mode=compile icc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include  -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c -o epoll.lo epoll.c
+/bin/bash ./libtool  --tag=CC   --mode=compile icc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include  -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c -o signal.lo signal.c
+/bin/bash ./libtool  --tag=CC   --mode=compile icc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include  -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c -o evdns.lo evdns.c
+libtool: compile:  icc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -Wdate-time -D_FORTIFY_SOURCE=2 -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c strlcpy.c -o strlcpy.o >/dev/null 2>&1
+libtool: compile:  icc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -Wdate-time -D_FORTIFY_SOURCE=2 -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c select.c  -fpic -o .libs/select.o
+/bin/bash ./libtool  --tag=CC   --mode=compile icc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include  -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c -o event_tagging.lo event_tagging.c
+/bin/bash ./libtool  --tag=CC   --mode=compile icc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include  -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c -o evrpc.lo evrpc.c
+libtool: compile:  icc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -Wdate-time -D_FORTIFY_SOURCE=2 -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c poll.c  -fpic -o .libs/poll.o
+/bin/bash ./libtool  --tag=CC   --mode=compile icc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include  -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c -o http.lo http.c
+libtool: compile:  icc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -Wdate-time -D_FORTIFY_SOURCE=2 -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c epoll.c  -fpic -o .libs/epoll.o
+libtool: compile:  icc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -Wdate-time -D_FORTIFY_SOURCE=2 -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c signal.c  -fpic -o .libs/signal.o
+libtool: compile:  icc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -Wdate-time -D_FORTIFY_SOURCE=2 -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c evdns.c  -fpic -o .libs/evdns.o
+libtool: compile:  icc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -Wdate-time -D_FORTIFY_SOURCE=2 -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c event_tagging.c  -fpic -o .libs/event_tagging.o
+libtool: compile:  icc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -Wdate-time -D_FORTIFY_SOURCE=2 -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c select.c -o select.o >/dev/null 2>&1
+libtool: compile:  icc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -Wdate-time -D_FORTIFY_SOURCE=2 -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c evrpc.c  -fpic -o .libs/evrpc.o
+libtool: compile:  icc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -Wdate-time -D_FORTIFY_SOURCE=2 -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c http.c  -fpic -o .libs/http.o
+libtool: compile:  icc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -Wdate-time -D_FORTIFY_SOURCE=2 -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c poll.c -o poll.o >/dev/null 2>&1
+epoll.c(245): warning #3179: deprecated conversion of string literal to char* (should be const char*)
+  	    op == EPOLL_CTL_MOD?"MOD":
+  	                             ^
+
+libtool: compile:  icc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -Wdate-time -D_FORTIFY_SOURCE=2 -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c signal.c -o signal.o >/dev/null 2>&1
+libtool: compile:  icc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -Wdate-time -D_FORTIFY_SOURCE=2 -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c epoll.c -o epoll.o >/dev/null 2>&1
+libtool: compile:  icc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -Wdate-time -D_FORTIFY_SOURCE=2 -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c event_tagging.c -o event_tagging.o >/dev/null 2>&1
+icc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include  -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c -o sample/event-read-fifo.o sample/event-read-fifo.c
+http.c(1342): warning #279: controlling expression is constant
+  	EVUTIL_ASSERT(!err && "drain output");
+  	^
+
+http.c(1345): warning #279: controlling expression is constant
+  	EVUTIL_ASSERT(!err && "drain input");
+  	^
+
+http.c(1711): warning #2338: this switch statement does not have a default clause
+  	switch (method_len) {
+  	^
+
+http.c(2203): warning #2338: this switch statement does not have a default clause
+  	switch (evhttp_have_expect(req, 1)) {
+  	^
+
+icc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include  -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c -o sample/hello-world.o sample/hello-world.c
+libtool: compile:  icc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -Wdate-time -D_FORTIFY_SOURCE=2 -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c evrpc.c -o evrpc.o >/dev/null 2>&1
+http.c(4645): warning #2338: this switch statement does not have a default clause
+  		switch (part) {
+  		^
+
+icc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include  -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c -o sample/http-server.o sample/http-server.c
+icc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include  -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c -o sample/http-connect.o sample/http-connect.c
+icc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include  -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c -o sample/signal-test.o sample/signal-test.c
+icc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include  -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c -o sample/time-test.o sample/time-test.c
+libtool: compile:  icc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -Wdate-time -D_FORTIFY_SOURCE=2 -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c evdns.c -o evdns.o >/dev/null 2>&1
+icc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include  -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c -o sample/le-proxy.o sample/le-proxy.c
+/bin/bash ./libtool  --tag=CC   --mode=compile icc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include   -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c -o libevent_openssl_la-bufferevent_openssl.lo `test -f 'bufferevent_openssl.c' || echo './'`bufferevent_openssl.c
+libtool: compile:  icc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -Wdate-time -D_FORTIFY_SOURCE=2 -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c http.c -o http.o >/dev/null 2>&1
+icc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include  -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c -o sample/https-client.o sample/https-client.c
+icc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include  -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c -o sample/hostcheck.o sample/hostcheck.c
+icc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include  -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c -o sample/openssl_hostname_validation.o sample/openssl_hostname_validation.c
+/bin/bash ./libtool  --tag=CC   --mode=link icc  -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -version-info 6:2:0 -release 2.1  -Wl,-z,relro -Wl,-z,now -Wl,--as-needed,--gc-sections,--relax -Wl,--as-needed -o libevent_core.la -rpath /usr/lib/x86_64-linux-gnu buffer.lo bufferevent.lo bufferevent_filter.lo bufferevent_pair.lo bufferevent_ratelim.lo bufferevent_sock.lo event.lo evmap.lo evthread.lo evutil.lo evutil_rand.lo evutil_time.lo listener.lo log.lo strlcpy.lo select.lo poll.lo   epoll.lo  signal.lo  
+sample/hostcheck.c(56): warning #2338: this switch statement does not have a default clause
+    switch (in) {
+    ^
+
+/bin/bash ./libtool  --tag=CC   --mode=compile icc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include  -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c -o evthread_pthread.lo evthread_pthread.c
+libtool: compile:  icc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -Wdate-time -D_FORTIFY_SOURCE=2 -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c bufferevent_openssl.c  -fpic -o .libs/libevent_openssl_la-bufferevent_openssl.o
+libtool: compile:  icc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -Wdate-time -D_FORTIFY_SOURCE=2 -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c evthread_pthread.c  -fpic -o .libs/evthread_pthread.o
+icc -DHAVE_CONFIG_H -I.  -I./compat -I./include -I./include  -Wdate-time -D_FORTIFY_SOURCE=2  -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c -o sample/dns-example.o sample/dns-example.c
+libtool: link: icc -shared  -fpic  .libs/buffer.o .libs/bufferevent.o .libs/bufferevent_filter.o .libs/bufferevent_pair.o .libs/bufferevent_ratelim.o .libs/bufferevent_sock.o .libs/event.o .libs/evmap.o .libs/evthread.o .libs/evutil.o .libs/evutil_rand.o .libs/evutil_time.o .libs/listener.o .libs/log.o .libs/strlcpy.o .libs/select.o .libs/poll.o .libs/epoll.o .libs/signal.o    -g -O2 -fstack-protector-strong -march=native -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,--as-needed -Wl,--gc-sections -Wl,--relax -Wl,--as-needed   -Wl,-soname -Wl,libevent_core-2.1.so.6 -o .libs/libevent_core-2.1.so.6.0.2
+libtool: compile:  icc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -Wdate-time -D_FORTIFY_SOURCE=2 -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c evthread_pthread.c -o evthread_pthread.o >/dev/null 2>&1
+/bin/bash ./libtool  --tag=CC   --mode=link icc  -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -version-info 6:2:0 -release 2.1  -Wl,-z,relro -Wl,-z,now -Wl,--as-needed,--gc-sections,--relax -Wl,--as-needed -o libevent.la -rpath /usr/lib/x86_64-linux-gnu buffer.lo bufferevent.lo bufferevent_filter.lo bufferevent_pair.lo bufferevent_ratelim.lo bufferevent_sock.lo event.lo evmap.lo evthread.lo evutil.lo evutil_rand.lo evutil_time.lo listener.lo log.lo strlcpy.lo select.lo poll.lo   epoll.lo  signal.lo evdns.lo event_tagging.lo evrpc.lo http.lo  
+/bin/bash ./libtool  --tag=CC   --mode=link icc  -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -version-info 6:2:0 -release 2.1  -Wl,-z,relro -Wl,-z,now -Wl,--as-needed,--gc-sections,--relax -Wl,--as-needed -o libevent_extra.la -rpath /usr/lib/x86_64-linux-gnu evdns.lo event_tagging.lo evrpc.lo http.lo   
+libtool: compile:  icc -DHAVE_CONFIG_H -I. -I./compat -I./include -I./include -Wdate-time -D_FORTIFY_SOURCE=2 -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -c bufferevent_openssl.c -o libevent_openssl_la-bufferevent_openssl.o >/dev/null 2>&1
+/bin/bash ./libtool  --tag=CC   --mode=link icc  -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -version-info 6:2:0 -release 2.1  -Wl,-z,relro -Wl,-z,now -Wl,--as-needed,--gc-sections,--relax -Wl,--as-needed -o libevent_pthreads.la -rpath /usr/lib/x86_64-linux-gnu evthread_pthread.lo  
+libtool: link: icc -shared  -fpic  .libs/evdns.o .libs/event_tagging.o .libs/evrpc.o .libs/http.o    -g -O2 -fstack-protector-strong -march=native -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,--as-needed -Wl,--gc-sections -Wl,--relax -Wl,--as-needed   -Wl,-soname -Wl,libevent_extra-2.1.so.6 -o .libs/libevent_extra-2.1.so.6.0.2
+libtool: link: icc -shared  -fpic  .libs/buffer.o .libs/bufferevent.o .libs/bufferevent_filter.o .libs/bufferevent_pair.o .libs/bufferevent_ratelim.o .libs/bufferevent_sock.o .libs/event.o .libs/evmap.o .libs/evthread.o .libs/evutil.o .libs/evutil_rand.o .libs/evutil_time.o .libs/listener.o .libs/log.o .libs/strlcpy.o .libs/select.o .libs/poll.o .libs/epoll.o .libs/signal.o .libs/evdns.o .libs/event_tagging.o .libs/evrpc.o .libs/http.o    -g -O2 -fstack-protector-strong -march=native -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,--as-needed -Wl,--gc-sections -Wl,--relax -Wl,--as-needed   -Wl,-soname -Wl,libevent-2.1.so.6 -o .libs/libevent-2.1.so.6.0.2
+libtool: link: icc -shared  -fpic  .libs/evthread_pthread.o    -g -O2 -fstack-protector-strong -march=native -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,--as-needed -Wl,--gc-sections -Wl,--relax -Wl,--as-needed   -Wl,-soname -Wl,libevent_pthreads-2.1.so.6 -o .libs/libevent_pthreads-2.1.so.6.0.2
+/bin/bash ./libtool  --tag=CC   --mode=link icc  -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -version-info 6:2:0 -release 2.1  -Wl,-z,relro -Wl,-z,now -Wl,--as-needed,--gc-sections,--relax -Wl,--as-needed -o libevent_openssl.la -rpath /usr/lib/x86_64-linux-gnu libevent_openssl_la-bufferevent_openssl.lo  -lssl -lcrypto    
+libtool: link: (cd ".libs" && rm -f "libevent_pthreads-2.1.so.6" && ln -s "libevent_pthreads-2.1.so.6.0.2" "libevent_pthreads-2.1.so.6")
+libtool: link: (cd ".libs" && rm -f "libevent_pthreads.so" && ln -s "libevent_pthreads-2.1.so.6.0.2" "libevent_pthreads.so")
+libtool: link: xiar cru .libs/libevent_pthreads.a  evthread_pthread.o
+xiar: executing 'ar'
+ar: `u' modifier ignored since `D' is the default (see `U')
+libtool: link: /usr/bin/x86_64-linux-gnu-ranlib .libs/libevent_pthreads.a
+libtool: link: ( cd ".libs" && rm -f "libevent_pthreads.la" && ln -s "../libevent_pthreads.la" "libevent_pthreads.la" )
+libtool: link: icc -shared  -fpic  .libs/libevent_openssl_la-bufferevent_openssl.o   -lssl -lcrypto  -g -O2 -fstack-protector-strong -march=native -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,--as-needed -Wl,--gc-sections -Wl,--relax -Wl,--as-needed   -Wl,-soname -Wl,libevent_openssl-2.1.so.6 -o .libs/libevent_openssl-2.1.so.6.0.2
+
+          buffer.c(214) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(224) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(237) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(214) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(224) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(237) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(214) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(224) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(237) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(923) (col. 3): warning #2102: violation of ansi-alias rules
+
+
+          evdns.c(2002) (col. 27): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(214) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(224) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(237) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(214) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(224) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(237) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          evdns.c(1440) (col. 27): warning #2102: violation of ansi-alias rules
+
+
+          evdns.c(1381) (col. 26): warning #2102: violation of ansi-alias rules
+
+
+          evdns.c(1418) (col. 27): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(214) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(224) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(237) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(214) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(224) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(237) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(214) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(224) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(237) (col. 7): warning #2102: violation of ansi-alias rules
+
+libtool: link: (cd ".libs" && rm -f "libevent_openssl-2.1.so.6" && ln -s "libevent_openssl-2.1.so.6.0.2" "libevent_openssl-2.1.so.6")
+libtool: link: (cd ".libs" && rm -f "libevent_openssl.so" && ln -s "libevent_openssl-2.1.so.6.0.2" "libevent_openssl.so")
+libtool: link: xiar cru .libs/libevent_openssl.a  libevent_openssl_la-bufferevent_openssl.o
+
+          buffer.c(2460) (col. 6): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(214) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(224) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(237) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(214) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(224) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(237) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(214) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(224) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(237) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(923) (col. 3): warning #2102: violation of ansi-alias rules
+
+
+          evdns.c(4141) (col. 6): warning #2102: violation of ansi-alias rules
+
+
+          evdns.c(4141) (col. 6): warning #2102: violation of ansi-alias rules
+
+
+          evdns.c(4141) (col. 6): warning #2102: violation of ansi-alias rules
+
+
+          evdns.c(4141) (col. 6): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(214) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(224) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(237) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(214) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(224) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(237) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          evdns.c(2624) (col. 2): warning #2102: violation of ansi-alias rules
+
+
+          evdns.c(2520) (col. 23): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(214) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(224) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(237) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(2924) (col. 2): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(2460) (col. 6): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(3220) (col. 2): warning #2102: violation of ansi-alias rules
+
+
+          evdns.c(2217) (col. 26): warning #2102: violation of ansi-alias rules
+
+
+          evdns.c(2520) (col. 23): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(214) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(224) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(237) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(214) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(224) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(237) (col. 7): warning #2102: violation of ansi-alias rules
+
+xiar: executing 'ar'
+ar: `u' modifier ignored since `D' is the default (see `U')
+libtool: link: /usr/bin/x86_64-linux-gnu-ranlib .libs/libevent_openssl.a
+
+          buffer.c(2924) (col. 2): warning #2102: violation of ansi-alias rules
+
+libtool: link: ( cd ".libs" && rm -f "libevent_openssl.la" && ln -s "../libevent_openssl.la" "libevent_openssl.la" )
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(3220) (col. 2): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          evdns.c(4515) (col. 3): warning #2102: violation of ansi-alias rules
+
+
+          evdns.c(4506) (col. 3): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(214) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(224) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(237) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(214) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(224) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(237) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(214) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(224) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(237) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(1311) (col. 51): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(1314) (col. 54): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(1043) (col. 11): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(830) (col. 2): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(1059) (col. 11): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(830) (col. 2): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(1004) (col. 11): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(830) (col. 2): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(1021) (col. 11): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(830) (col. 2): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(830) (col. 2): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(1311) (col. 51): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(1314) (col. 54): warning #2102: violation of ansi-alias rules
+
+
+          bufferevent_sock.c(112) (col. 46): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(1043) (col. 11): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(830) (col. 2): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(1059) (col. 11): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(830) (col. 2): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(1004) (col. 11): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(830) (col. 2): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(1021) (col. 11): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(830) (col. 2): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(2460) (col. 6): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(625) (col. 60): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(614) (col. 57): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(768) (col. 37): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(769) (col. 41): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(777) (col. 37): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(778) (col. 41): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(625) (col. 60): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(614) (col. 57): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(830) (col. 2): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(830) (col. 2): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          bufferevent_sock.c(112) (col. 46): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(2460) (col. 6): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+libtool: link: (cd ".libs" && rm -f "libevent_extra-2.1.so.6" && ln -s "libevent_extra-2.1.so.6.0.2" "libevent_extra-2.1.so.6")
+libtool: link: (cd ".libs" && rm -f "libevent_extra.so" && ln -s "libevent_extra-2.1.so.6.0.2" "libevent_extra.so")
+libtool: link: xiar cru .libs/libevent_extra.a  evdns.o event_tagging.o evrpc.o http.o
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          evmap.c(730) (col. 2): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          evmap.c(730) (col. 2): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(252) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(266) (col. 49): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(270) (col. 46): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(275) (col. 51): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(282) (col. 50): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(625) (col. 60): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(614) (col. 57): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(625) (col. 60): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(614) (col. 57): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(768) (col. 37): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(769) (col. 41): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(777) (col. 37): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(778) (col. 41): warning #2102: violation of ansi-alias rules
+
+
+          evmap.c(730) (col. 2): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(2188) (col. 65): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(2180) (col. 62): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(2227) (col. 3): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(2228) (col. 3): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(2212) (col. 3): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(2213) (col. 3): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(2465) (col. 51): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(2468) (col. 54): warning #2102: violation of ansi-alias rules
+
+
+          evmap.c(730) (col. 2): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(252) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(266) (col. 49): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(270) (col. 46): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(275) (col. 51): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(282) (col. 50): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(625) (col. 60): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(614) (col. 57): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(768) (col. 37): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(769) (col. 41): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(777) (col. 37): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(778) (col. 41): warning #2102: violation of ansi-alias rules
+
+
+          listener.c(399) (col. 28): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(2188) (col. 65): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(2180) (col. 62): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(2227) (col. 3): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(2228) (col. 3): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(2212) (col. 3): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(2213) (col. 3): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(2465) (col. 51): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(2468) (col. 54): warning #2102: violation of ansi-alias rules
+
+
+          listener.c(399) (col. 28): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          evdns.c(2324) (col. 6): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(2188) (col. 65): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(2180) (col. 62): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          evdns.c(2002) (col. 27): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          evdns.c(1440) (col. 27): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          evdns.c(1484) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(2188) (col. 65): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(2180) (col. 62): warning #2102: violation of ansi-alias rules
+
+
+          evdns.c(1381) (col. 26): warning #2102: violation of ansi-alias rules
+
+
+          evdns.c(1390) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          evdns.c(1390) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(2227) (col. 3): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(2228) (col. 3): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(2212) (col. 3): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(2213) (col. 3): warning #2102: violation of ansi-alias rules
+
+
+          evdns.c(1394) (col. 8): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(2188) (col. 65): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(2180) (col. 62): warning #2102: violation of ansi-alias rules
+
+
+          evdns.c(916) (col. 8): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(2188) (col. 65): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(2180) (col. 62): warning #2102: violation of ansi-alias rules
+
+libtool: link: (cd ".libs" && rm -f "libevent_core-2.1.so.6" && ln -s "libevent_core-2.1.so.6.0.2" "libevent_core-2.1.so.6")
+
+          evdns.c(624) (col. 6): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(2188) (col. 65): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(2180) (col. 62): warning #2102: violation of ansi-alias rules
+
+libtool: link: (cd ".libs" && rm -f "libevent_core.so" && ln -s "libevent_core-2.1.so.6.0.2" "libevent_core.so")
+libtool: link: xiar cru .libs/libevent_core.a  buffer.o bufferevent.o bufferevent_filter.o bufferevent_pair.o bufferevent_ratelim.o bufferevent_sock.o event.o evmap.o evthread.o evutil.o evutil_rand.o evutil_time.o listener.o log.o strlcpy.o select.o poll.o epoll.o signal.o
+
+          evdns.c(1418) (col. 27): warning #2102: violation of ansi-alias rules
+
+
+          evdns.c(1484) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(2188) (col. 65): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(2180) (col. 62): warning #2102: violation of ansi-alias rules
+
+
+          evdns.c(2217) (col. 26): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          evdns.c(2496) (col. 9): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(2227) (col. 3): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(2228) (col. 3): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(2212) (col. 3): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(2213) (col. 3): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(2465) (col. 51): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(2468) (col. 54): warning #2102: violation of ansi-alias rules
+
+
+          evdns.c(2520) (col. 23): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(2188) (col. 65): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(2180) (col. 62): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(2188) (col. 65): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(2180) (col. 62): warning #2102: violation of ansi-alias rules
+
+
+          evdns.c(2624) (col. 2): warning #2102: violation of ansi-alias rules
+
+
+          evdns.c(4141) (col. 6): warning #2102: violation of ansi-alias rules
+
+
+          evdns.c(4515) (col. 3): warning #2102: violation of ansi-alias rules
+
+
+          evdns.c(4506) (col. 3): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(830) (col. 2): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(214) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(224) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(237) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+xiar: executing 'ar'
+ar: `u' modifier ignored since `D' is the default (see `U')
+libtool: link: /usr/bin/x86_64-linux-gnu-ranlib .libs/libevent_extra.a
+libtool: link: ( cd ".libs" && rm -f "libevent_extra.la" && ln -s "../libevent_extra.la" "libevent_extra.la" )
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(214) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(224) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(237) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(214) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(224) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(237) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(214) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(224) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(237) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(214) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(224) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(237) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(214) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(224) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(237) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(214) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(224) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          buffer.c(237) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          evdns.c(570) (col. 6): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(2188) (col. 65): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(2180) (col. 62): warning #2102: violation of ansi-alias rules
+
+
+          evdns.c(588) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(2188) (col. 65): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(2180) (col. 62): warning #2102: violation of ansi-alias rules
+
+
+          evdns.c(538) (col. 7): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(2188) (col. 65): warning #2102: violation of ansi-alias rules
+
+
+          evutil.c(2180) (col. 62): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+
+          event.c(187) (col. 42): warning #2102: violation of ansi-alias rules
+
+libtool: link: (cd ".libs" && rm -f "libevent-2.1.so.6" && ln -s "libevent-2.1.so.6.0.2" "libevent-2.1.so.6")
+libtool: link: (cd ".libs" && rm -f "libevent.so" && ln -s "libevent-2.1.so.6.0.2" "libevent.so")
+libtool: link: xiar cru .libs/libevent.a  buffer.o bufferevent.o bufferevent_filter.o bufferevent_pair.o bufferevent_ratelim.o bufferevent_sock.o event.o evmap.o evthread.o evutil.o evutil_rand.o evutil_time.o listener.o log.o strlcpy.o select.o poll.o epoll.o signal.o evdns.o event_tagging.o evrpc.o http.o
+xiar: executing 'ar'
+ar: `u' modifier ignored since `D' is the default (see `U')
+libtool: link: /usr/bin/x86_64-linux-gnu-ranlib .libs/libevent_core.a
+libtool: link: ( cd ".libs" && rm -f "libevent_core.la" && ln -s "../libevent_core.la" "libevent_core.la" )
+xiar: executing 'ar'
+ar: `u' modifier ignored since `D' is the default (see `U')
+libtool: link: /usr/bin/x86_64-linux-gnu-ranlib .libs/libevent.a
+libtool: link: ( cd ".libs" && rm -f "libevent.la" && ln -s "../libevent.la" "libevent.la" )
+/bin/bash ./libtool  --tag=CC   --mode=link icc  -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op  -Wl,-z,relro -Wl,-z,now -Wl,--as-needed,--gc-sections,--relax -Wl,--as-needed -o sample/dns-example sample/dns-example.o  libevent.la 
+/bin/bash ./libtool  --tag=CC   --mode=link icc  -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op  -Wl,-z,relro -Wl,-z,now -Wl,--as-needed,--gc-sections,--relax -Wl,--as-needed -o sample/event-read-fifo sample/event-read-fifo.o  libevent.la 
+/bin/bash ./libtool  --tag=CC   --mode=link icc  -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op  -Wl,-z,relro -Wl,-z,now -Wl,--as-needed,--gc-sections,--relax -Wl,--as-needed -o sample/hello-world sample/hello-world.o  libevent.la 
+/bin/bash ./libtool  --tag=CC   --mode=link icc  -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op  -Wl,-z,relro -Wl,-z,now -Wl,--as-needed,--gc-sections,--relax -Wl,--as-needed -o sample/http-server sample/http-server.o  libevent.la 
+/bin/bash ./libtool  --tag=CC   --mode=link icc  -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op  -Wl,-z,relro -Wl,-z,now -Wl,--as-needed,--gc-sections,--relax -Wl,--as-needed -o sample/http-connect sample/http-connect.o  libevent.la 
+/bin/bash ./libtool  --tag=CC   --mode=link icc  -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op  -Wl,-z,relro -Wl,-z,now -Wl,--as-needed,--gc-sections,--relax -Wl,--as-needed -o sample/signal-test sample/signal-test.o  libevent.la 
+/bin/bash ./libtool  --tag=CC   --mode=link icc  -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op  -Wl,-z,relro -Wl,-z,now -Wl,--as-needed,--gc-sections,--relax -Wl,--as-needed -o sample/time-test sample/time-test.o  libevent.la 
+/bin/bash ./libtool  --tag=CC   --mode=link icc  -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op  -Wl,-z,relro -Wl,-z,now -Wl,--as-needed,--gc-sections,--relax -Wl,--as-needed -o sample/le-proxy sample/le-proxy.o libevent.la libevent_openssl.la -lssl -lcrypto     
+libtool: link: icc -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,--as-needed -Wl,--gc-sections -Wl,--relax -Wl,--as-needed -o sample/.libs/http-server sample/http-server.o  ./.libs/libevent.so
+libtool: link: icc -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,--as-needed -Wl,--gc-sections -Wl,--relax -Wl,--as-needed -o sample/.libs/dns-example sample/dns-example.o  ./.libs/libevent.so
+libtool: link: icc -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,--as-needed -Wl,--gc-sections -Wl,--relax -Wl,--as-needed -o sample/.libs/signal-test sample/signal-test.o  ./.libs/libevent.so
+libtool: link: icc -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,--as-needed -Wl,--gc-sections -Wl,--relax -Wl,--as-needed -o sample/.libs/http-connect sample/http-connect.o  ./.libs/libevent.so
+libtool: link: icc -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,--as-needed -Wl,--gc-sections -Wl,--relax -Wl,--as-needed -o sample/.libs/hello-world sample/hello-world.o  ./.libs/libevent.so
+libtool: link: icc -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,--as-needed -Wl,--gc-sections -Wl,--relax -Wl,--as-needed -o sample/.libs/time-test sample/time-test.o  ./.libs/libevent.so
+libtool: link: icc -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,--as-needed -Wl,--gc-sections -Wl,--relax -Wl,--as-needed -o sample/.libs/event-read-fifo sample/event-read-fifo.o  ./.libs/libevent.so
+libtool: link: icc -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,--as-needed -Wl,--gc-sections -Wl,--relax -Wl,--as-needed -o sample/.libs/le-proxy sample/le-proxy.o  ./.libs/libevent.so ./.libs/libevent_openssl.so -lssl -lcrypto
+/bin/bash ./libtool  --tag=CC   --mode=link icc  -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing  -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op  -Wl,-z,relro -Wl,-z,now -Wl,--as-needed,--gc-sections,--relax -Wl,--as-needed -o sample/https-client sample/https-client.o sample/hostcheck.o sample/openssl_hostname_validation.o libevent.la libevent_openssl.la -lssl -lcrypto     
+libtool: link: icc -g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe -Wall -fno-strict-aliasing -W -Wfloat-equal -Wundef -Wpointer-arith -Wstrict-prototypes -Wmissing-prototypes -Wwrite-strings -Wredundant-decls -Wchar-subscripts -Wcomment -Wformat -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wbad-function-cast -Wswitch -Wno-unused-parameter -Wstrict-aliasing -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wl,-z -Wl,relro -Wl,-z -Wl,now -Wl,--as-needed -Wl,--gc-sections -Wl,--relax -Wl,--as-needed -o sample/.libs/https-client sample/https-client.o sample/hostcheck.o sample/openssl_hostname_validation.o  ./.libs/libevent.so ./.libs/libevent_openssl.so -lssl -lcrypto
+make[2]: Leaving directory '/dev/shm/libevent/libevent-2.1.8-stable'
+make[1]: Leaving directory '/dev/shm/libevent/libevent-2.1.8-stable'
+   dh_auto_test
+   create-stamp debian/debhelper-build-stamp
+ fakeroot debian/rules binary
+dh binary
+   dh_testroot
+   dh_prep
+   dh_auto_install
+	make -j1 install DESTDIR=/dev/shm/libevent/libevent-2.1.8-stable/debian/tmp AM_UPDATE_INFO_DIR=no
+make[1]: Entering directory '/dev/shm/libevent/libevent-2.1.8-stable'
+make  install-am
+make[2]: Entering directory '/dev/shm/libevent/libevent-2.1.8-stable'
+make[3]: Entering directory '/dev/shm/libevent/libevent-2.1.8-stable'
+ /bin/mkdir -p '/dev/shm/libevent/libevent-2.1.8-stable/debian/tmp/usr/bin'
+ /usr/bin/install event_rpcgen.py '/dev/shm/libevent/libevent-2.1.8-stable/debian/tmp/usr/bin'
+ /bin/mkdir -p '/dev/shm/libevent/libevent-2.1.8-stable/debian/tmp/usr/lib/x86_64-linux-gnu'
+ /bin/bash ./libtool   --mode=install /usr/bin/install   libevent.la libevent_core.la libevent_extra.la libevent_pthreads.la libevent_openssl.la '/dev/shm/libevent/libevent-2.1.8-stable/debian/tmp/usr/lib/x86_64-linux-gnu'
+libtool: install: /usr/bin/install .libs/libevent-2.1.so.6.0.2 /dev/shm/libevent/libevent-2.1.8-stable/debian/tmp/usr/lib/x86_64-linux-gnu/libevent-2.1.so.6.0.2
+libtool: install: (cd /dev/shm/libevent/libevent-2.1.8-stable/debian/tmp/usr/lib/x86_64-linux-gnu && { ln -s -f libevent-2.1.so.6.0.2 libevent-2.1.so.6 || { rm -f libevent-2.1.so.6 && ln -s libevent-2.1.so.6.0.2 libevent-2.1.so.6; }; })
+libtool: install: (cd /dev/shm/libevent/libevent-2.1.8-stable/debian/tmp/usr/lib/x86_64-linux-gnu && { ln -s -f libevent-2.1.so.6.0.2 libevent.so || { rm -f libevent.so && ln -s libevent-2.1.so.6.0.2 libevent.so; }; })
+libtool: install: /usr/bin/install .libs/libevent.lai /dev/shm/libevent/libevent-2.1.8-stable/debian/tmp/usr/lib/x86_64-linux-gnu/libevent.la
+libtool: install: /usr/bin/install .libs/libevent_core-2.1.so.6.0.2 /dev/shm/libevent/libevent-2.1.8-stable/debian/tmp/usr/lib/x86_64-linux-gnu/libevent_core-2.1.so.6.0.2
+libtool: install: (cd /dev/shm/libevent/libevent-2.1.8-stable/debian/tmp/usr/lib/x86_64-linux-gnu && { ln -s -f libevent_core-2.1.so.6.0.2 libevent_core-2.1.so.6 || { rm -f libevent_core-2.1.so.6 && ln -s libevent_core-2.1.so.6.0.2 libevent_core-2.1.so.6; }; })
+libtool: install: (cd /dev/shm/libevent/libevent-2.1.8-stable/debian/tmp/usr/lib/x86_64-linux-gnu && { ln -s -f libevent_core-2.1.so.6.0.2 libevent_core.so || { rm -f libevent_core.so && ln -s libevent_core-2.1.so.6.0.2 libevent_core.so; }; })
+libtool: install: /usr/bin/install .libs/libevent_core.lai /dev/shm/libevent/libevent-2.1.8-stable/debian/tmp/usr/lib/x86_64-linux-gnu/libevent_core.la
+libtool: install: /usr/bin/install .libs/libevent_extra-2.1.so.6.0.2 /dev/shm/libevent/libevent-2.1.8-stable/debian/tmp/usr/lib/x86_64-linux-gnu/libevent_extra-2.1.so.6.0.2
+libtool: install: (cd /dev/shm/libevent/libevent-2.1.8-stable/debian/tmp/usr/lib/x86_64-linux-gnu && { ln -s -f libevent_extra-2.1.so.6.0.2 libevent_extra-2.1.so.6 || { rm -f libevent_extra-2.1.so.6 && ln -s libevent_extra-2.1.so.6.0.2 libevent_extra-2.1.so.6; }; })
+libtool: install: (cd /dev/shm/libevent/libevent-2.1.8-stable/debian/tmp/usr/lib/x86_64-linux-gnu && { ln -s -f libevent_extra-2.1.so.6.0.2 libevent_extra.so || { rm -f libevent_extra.so && ln -s libevent_extra-2.1.so.6.0.2 libevent_extra.so; }; })
+libtool: install: /usr/bin/install .libs/libevent_extra.lai /dev/shm/libevent/libevent-2.1.8-stable/debian/tmp/usr/lib/x86_64-linux-gnu/libevent_extra.la
+libtool: install: /usr/bin/install .libs/libevent_pthreads-2.1.so.6.0.2 /dev/shm/libevent/libevent-2.1.8-stable/debian/tmp/usr/lib/x86_64-linux-gnu/libevent_pthreads-2.1.so.6.0.2
+libtool: install: (cd /dev/shm/libevent/libevent-2.1.8-stable/debian/tmp/usr/lib/x86_64-linux-gnu && { ln -s -f libevent_pthreads-2.1.so.6.0.2 libevent_pthreads-2.1.so.6 || { rm -f libevent_pthreads-2.1.so.6 && ln -s libevent_pthreads-2.1.so.6.0.2 libevent_pthreads-2.1.so.6; }; })
+libtool: install: (cd /dev/shm/libevent/libevent-2.1.8-stable/debian/tmp/usr/lib/x86_64-linux-gnu && { ln -s -f libevent_pthreads-2.1.so.6.0.2 libevent_pthreads.so || { rm -f libevent_pthreads.so && ln -s libevent_pthreads-2.1.so.6.0.2 libevent_pthreads.so; }; })
+libtool: install: /usr/bin/install .libs/libevent_pthreads.lai /dev/shm/libevent/libevent-2.1.8-stable/debian/tmp/usr/lib/x86_64-linux-gnu/libevent_pthreads.la
+libtool: install: /usr/bin/install .libs/libevent_openssl-2.1.so.6.0.2 /dev/shm/libevent/libevent-2.1.8-stable/debian/tmp/usr/lib/x86_64-linux-gnu/libevent_openssl-2.1.so.6.0.2
+libtool: install: (cd /dev/shm/libevent/libevent-2.1.8-stable/debian/tmp/usr/lib/x86_64-linux-gnu && { ln -s -f libevent_openssl-2.1.so.6.0.2 libevent_openssl-2.1.so.6 || { rm -f libevent_openssl-2.1.so.6 && ln -s libevent_openssl-2.1.so.6.0.2 libevent_openssl-2.1.so.6; }; })
+libtool: install: (cd /dev/shm/libevent/libevent-2.1.8-stable/debian/tmp/usr/lib/x86_64-linux-gnu && { ln -s -f libevent_openssl-2.1.so.6.0.2 libevent_openssl.so || { rm -f libevent_openssl.so && ln -s libevent_openssl-2.1.so.6.0.2 libevent_openssl.so; }; })
+libtool: install: /usr/bin/install .libs/libevent_openssl.lai /dev/shm/libevent/libevent-2.1.8-stable/debian/tmp/usr/lib/x86_64-linux-gnu/libevent_openssl.la
+libtool: install: /usr/bin/install .libs/libevent.a /dev/shm/libevent/libevent-2.1.8-stable/debian/tmp/usr/lib/x86_64-linux-gnu/libevent.a
+libtool: install: chmod 644 /dev/shm/libevent/libevent-2.1.8-stable/debian/tmp/usr/lib/x86_64-linux-gnu/libevent.a
+libtool: install: /usr/bin/x86_64-linux-gnu-ranlib /dev/shm/libevent/libevent-2.1.8-stable/debian/tmp/usr/lib/x86_64-linux-gnu/libevent.a
+libtool: install: /usr/bin/install .libs/libevent_core.a /dev/shm/libevent/libevent-2.1.8-stable/debian/tmp/usr/lib/x86_64-linux-gnu/libevent_core.a
+libtool: install: chmod 644 /dev/shm/libevent/libevent-2.1.8-stable/debian/tmp/usr/lib/x86_64-linux-gnu/libevent_core.a
+libtool: install: /usr/bin/x86_64-linux-gnu-ranlib /dev/shm/libevent/libevent-2.1.8-stable/debian/tmp/usr/lib/x86_64-linux-gnu/libevent_core.a
+libtool: install: /usr/bin/install .libs/libevent_extra.a /dev/shm/libevent/libevent-2.1.8-stable/debian/tmp/usr/lib/x86_64-linux-gnu/libevent_extra.a
+libtool: install: chmod 644 /dev/shm/libevent/libevent-2.1.8-stable/debian/tmp/usr/lib/x86_64-linux-gnu/libevent_extra.a
+libtool: install: /usr/bin/x86_64-linux-gnu-ranlib /dev/shm/libevent/libevent-2.1.8-stable/debian/tmp/usr/lib/x86_64-linux-gnu/libevent_extra.a
+libtool: install: /usr/bin/install .libs/libevent_pthreads.a /dev/shm/libevent/libevent-2.1.8-stable/debian/tmp/usr/lib/x86_64-linux-gnu/libevent_pthreads.a
+libtool: install: chmod 644 /dev/shm/libevent/libevent-2.1.8-stable/debian/tmp/usr/lib/x86_64-linux-gnu/libevent_pthreads.a
+libtool: install: /usr/bin/x86_64-linux-gnu-ranlib /dev/shm/libevent/libevent-2.1.8-stable/debian/tmp/usr/lib/x86_64-linux-gnu/libevent_pthreads.a
+libtool: install: /usr/bin/install .libs/libevent_openssl.a /dev/shm/libevent/libevent-2.1.8-stable/debian/tmp/usr/lib/x86_64-linux-gnu/libevent_openssl.a
+libtool: install: chmod 644 /dev/shm/libevent/libevent-2.1.8-stable/debian/tmp/usr/lib/x86_64-linux-gnu/libevent_openssl.a
+libtool: install: /usr/bin/x86_64-linux-gnu-ranlib /dev/shm/libevent/libevent-2.1.8-stable/debian/tmp/usr/lib/x86_64-linux-gnu/libevent_openssl.a
+libtool: warning: remember to run 'libtool --finish /usr/lib/x86_64-linux-gnu'
+ /bin/mkdir -p '/dev/shm/libevent/libevent-2.1.8-stable/debian/tmp/usr/include'
+ /usr/bin/install -m 644 include/evdns.h include/event.h include/evhttp.h include/evrpc.h include/evutil.h '/dev/shm/libevent/libevent-2.1.8-stable/debian/tmp/usr/include'
+ /bin/mkdir -p '/dev/shm/libevent/libevent-2.1.8-stable/debian/tmp/usr/include/event2'
+ /usr/bin/install -m 644 include/event2/buffer.h include/event2/buffer_compat.h include/event2/bufferevent.h include/event2/bufferevent_compat.h include/event2/bufferevent_ssl.h include/event2/bufferevent_struct.h include/event2/dns.h include/event2/dns_compat.h include/event2/dns_struct.h include/event2/event.h include/event2/event_compat.h include/event2/event_struct.h include/event2/http.h include/event2/http_compat.h include/event2/http_struct.h include/event2/keyvalq_struct.h include/event2/listener.h include/event2/rpc.h include/event2/rpc_compat.h include/event2/rpc_struct.h include/event2/tag.h include/event2/tag_compat.h include/event2/thread.h include/event2/util.h include/event2/visibility.h '/dev/shm/libevent/libevent-2.1.8-stable/debian/tmp/usr/include/event2'
+ /bin/mkdir -p '/dev/shm/libevent/libevent-2.1.8-stable/debian/tmp/usr/include/event2'
+ /usr/bin/install -m 644 include/event2/event-config.h '/dev/shm/libevent/libevent-2.1.8-stable/debian/tmp/usr/include/event2'
+ /bin/mkdir -p '/dev/shm/libevent/libevent-2.1.8-stable/debian/tmp/usr/lib/x86_64-linux-gnu/pkgconfig'
+ /usr/bin/install -m 644 libevent.pc libevent_core.pc libevent_extra.pc libevent_pthreads.pc libevent_openssl.pc '/dev/shm/libevent/libevent-2.1.8-stable/debian/tmp/usr/lib/x86_64-linux-gnu/pkgconfig'
+make[3]: Leaving directory '/dev/shm/libevent/libevent-2.1.8-stable'
+make[2]: Leaving directory '/dev/shm/libevent/libevent-2.1.8-stable'
+make[1]: Leaving directory '/dev/shm/libevent/libevent-2.1.8-stable'
+   dh_install
+   dh_installdocs
+   dh_installchangelogs
+   dh_installexamples
+   dh_perl
+   dh_link
+   dh_strip_nondeterminism
+   dh_compress
+   dh_fixperms
+   dh_missing
+   debian/rules override_dh_strip
+make[1]: Entering directory '/dev/shm/libevent/libevent-2.1.8-stable'
+dh_strip --dbgsym-migration="libevent-dbg (<< 2.1.8-stable-1~)" || dh_strip
+make[1]: Leaving directory '/dev/shm/libevent/libevent-2.1.8-stable'
+   dh_makeshlibs
+   dh_shlibdeps
+dpkg-shlibdeps: warning: deprecated use of LD_LIBRARY_PATH with private library directory which interferes with cross-building, please use -l option instead
+dpkg-shlibdeps: warning: deprecated use of LD_LIBRARY_PATH with private library directory which interferes with cross-building, please use -l option instead
+dpkg-shlibdeps: warning: deprecated use of LD_LIBRARY_PATH with private library directory which interferes with cross-building, please use -l option instead
+dpkg-shlibdeps: warning: deprecated use of LD_LIBRARY_PATH with private library directory which interferes with cross-building, please use -l option instead
+dpkg-shlibdeps: warning: deprecated use of LD_LIBRARY_PATH with private library directory which interferes with cross-building, please use -l option instead
+dpkg-shlibdeps: warning: symbol evthread_set_condition_callbacks used by debian/libevent-pthreads-2.1-6/usr/lib/x86_64-linux-gnu/libevent_pthreads-2.1.so.6.0.2 found in none of the libraries
+dpkg-shlibdeps: warning: symbol event_mm_malloc_ used by debian/libevent-pthreads-2.1-6/usr/lib/x86_64-linux-gnu/libevent_pthreads-2.1.so.6.0.2 found in none of the libraries
+dpkg-shlibdeps: warning: symbol evthread_set_lock_callbacks used by debian/libevent-pthreads-2.1-6/usr/lib/x86_64-linux-gnu/libevent_pthreads-2.1.so.6.0.2 found in none of the libraries
+dpkg-shlibdeps: warning: symbol event_mm_free_ used by debian/libevent-pthreads-2.1-6/usr/lib/x86_64-linux-gnu/libevent_pthreads-2.1.so.6.0.2 found in none of the libraries
+dpkg-shlibdeps: warning: symbol evthread_set_id_callback used by debian/libevent-pthreads-2.1-6/usr/lib/x86_64-linux-gnu/libevent_pthreads-2.1.so.6.0.2 found in none of the libraries
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/libevent-pthreads-2.1-6/usr/lib/x86_64-linux-gnu/libevent_pthreads-2.1.so.6.0.2 was not linked against libdl.so.2 (it uses none of the library's symbols)
+dpkg-shlibdeps: warning: symbol event_deferred_cb_cancel_ used by debian/libevent-extra-2.1-6/usr/lib/x86_64-linux-gnu/libevent_extra-2.1.so.6.0.2 found in none of the libraries
+dpkg-shlibdeps: warning: symbol bufferevent_set_timeouts used by debian/libevent-extra-2.1-6/usr/lib/x86_64-linux-gnu/libevent_extra-2.1.so.6.0.2 found in none of the libraries
+dpkg-shlibdeps: warning: symbol evutil_sockaddr_cmp used by debian/libevent-extra-2.1-6/usr/lib/x86_64-linux-gnu/libevent_extra-2.1.so.6.0.2 found in none of the libraries
+dpkg-shlibdeps: warning: symbol bufferevent_get_options_ used by debian/libevent-extra-2.1-6/usr/lib/x86_64-linux-gnu/libevent_extra-2.1.so.6.0.2 found in none of the libraries
+dpkg-shlibdeps: warning: symbol EVUTIL_ISALPHA_ used by debian/libevent-extra-2.1-6/usr/lib/x86_64-linux-gnu/libevent_extra-2.1.so.6.0.2 found in none of the libraries
+dpkg-shlibdeps: warning: symbol evutil_inet_pton used by debian/libevent-extra-2.1-6/usr/lib/x86_64-linux-gnu/libevent_extra-2.1.so.6.0.2 found in none of the libraries
+dpkg-shlibdeps: warning: symbol event_debugx_ used by debian/libevent-extra-2.1-6/usr/lib/x86_64-linux-gnu/libevent_extra-2.1.so.6.0.2 found in none of the libraries
+dpkg-shlibdeps: warning: symbol evbuffer_remove_buffer used by debian/libevent-extra-2.1-6/usr/lib/x86_64-linux-gnu/libevent_extra-2.1.so.6.0.2 found in none of the libraries
+dpkg-shlibdeps: warning: symbol event_get_priority used by debian/libevent-extra-2.1-6/usr/lib/x86_64-linux-gnu/libevent_extra-2.1.so.6.0.2 found in none of the libraries
+dpkg-shlibdeps: warning: symbol evutil_rtrim_lws_ used by debian/libevent-extra-2.1-6/usr/lib/x86_64-linux-gnu/libevent_extra-2.1.so.6.0.2 found in none of the libraries
+dpkg-shlibdeps: warning: 83 other similar warnings have been skipped (use -v to see them all)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/libevent-extra-2.1-6/usr/lib/x86_64-linux-gnu/libevent_extra-2.1.so.6.0.2 was not linked against libdl.so.2 (it uses none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/libevent-core-2.1-6/usr/lib/x86_64-linux-gnu/libevent_core-2.1.so.6.0.2 was not linked against libdl.so.2 (it uses none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/libevent-2.1-6/usr/lib/x86_64-linux-gnu/libevent-2.1.so.6.0.2 was not linked against libdl.so.2 (it uses none of the library's symbols)
+dpkg-shlibdeps: warning: symbol evbuffer_add used by debian/libevent-openssl-2.1-6/usr/lib/x86_64-linux-gnu/libevent_openssl-2.1.so.6.0.2 found in none of the libraries
+dpkg-shlibdeps: warning: symbol bufferevent_get_input used by debian/libevent-openssl-2.1-6/usr/lib/x86_64-linux-gnu/libevent_openssl-2.1.so.6.0.2 found in none of the libraries
+dpkg-shlibdeps: warning: symbol bufferevent_run_writecb_ used by debian/libevent-openssl-2.1-6/usr/lib/x86_64-linux-gnu/libevent_openssl-2.1.so.6.0.2 found in none of the libraries
+dpkg-shlibdeps: warning: symbol bufferevent_decrement_write_buckets_ used by debian/libevent-openssl-2.1-6/usr/lib/x86_64-linux-gnu/libevent_openssl-2.1.so.6.0.2 found in none of the libraries
+dpkg-shlibdeps: warning: symbol evbuffer_add_cb used by debian/libevent-openssl-2.1-6/usr/lib/x86_64-linux-gnu/libevent_openssl-2.1.so.6.0.2 found in none of the libraries
+dpkg-shlibdeps: warning: symbol bufferevent_unsuspend_read_ used by debian/libevent-openssl-2.1-6/usr/lib/x86_64-linux-gnu/libevent_openssl-2.1.so.6.0.2 found in none of the libraries
+dpkg-shlibdeps: warning: symbol bufferevent_incref_and_lock_ used by debian/libevent-openssl-2.1-6/usr/lib/x86_64-linux-gnu/libevent_openssl-2.1.so.6.0.2 found in none of the libraries
+dpkg-shlibdeps: warning: symbol bufferevent_setwatermark used by debian/libevent-openssl-2.1-6/usr/lib/x86_64-linux-gnu/libevent_openssl-2.1.so.6.0.2 found in none of the libraries
+dpkg-shlibdeps: warning: symbol bufferevent_generic_adj_existing_timeouts_ used by debian/libevent-openssl-2.1-6/usr/lib/x86_64-linux-gnu/libevent_openssl-2.1.so.6.0.2 found in none of the libraries
+dpkg-shlibdeps: warning: symbol bufferevent_setcb used by debian/libevent-openssl-2.1-6/usr/lib/x86_64-linux-gnu/libevent_openssl-2.1.so.6.0.2 found in none of the libraries
+dpkg-shlibdeps: warning: 34 other similar warnings have been skipped (use -v to see them all)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/libevent-openssl-2.1-6/usr/lib/x86_64-linux-gnu/libevent_openssl-2.1.so.6.0.2 was not linked against libdl.so.2 (it uses none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/libevent-openssl-2.1-6/usr/lib/x86_64-linux-gnu/libevent_openssl-2.1.so.6.0.2 was not linked against libpthread.so.0 (it uses none of the library's symbols)
+   dh_installdeb
+   dh_gencontrol
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package 'libevent-dev' in '../libevent-dev_2.1.8-stable-4_amd64.deb'.
+dpkg-deb: building package 'libevent-extra-2.1-6-dbgsym' in '../libevent-extra-2.1-6-dbgsym_2.1.8-stable-4_amd64.deb'.
+dpkg-deb: building package 'libevent-2.1-6-dbgsym' in '../libevent-2.1-6-dbgsym_2.1.8-stable-4_amd64.deb'.
+dpkg-deb: building package 'libevent-core-2.1-6-dbgsym' in '../libevent-core-2.1-6-dbgsym_2.1.8-stable-4_amd64.deb'.
+dpkg-deb: building package 'libevent-pthreads-2.1-6-dbgsym' in '../libevent-pthreads-2.1-6-dbgsym_2.1.8-stable-4_amd64.deb'.
+dpkg-deb: building package 'libevent-openssl-2.1-6-dbgsym' in '../libevent-openssl-2.1-6-dbgsym_2.1.8-stable-4_amd64.deb'.
+dpkg-deb: building package 'libevent-openssl-2.1-6' in '../libevent-openssl-2.1-6_2.1.8-stable-4_amd64.deb'.
+dpkg-deb: building package 'libevent-pthreads-2.1-6' in '../libevent-pthreads-2.1-6_2.1.8-stable-4_amd64.deb'.
+dpkg-deb: building package 'libevent-extra-2.1-6' in '../libevent-extra-2.1-6_2.1.8-stable-4_amd64.deb'.
+dpkg-deb: building package 'libevent-core-2.1-6' in '../libevent-core-2.1-6_2.1.8-stable-4_amd64.deb'.
+dpkg-deb: building package 'libevent-2.1-6' in '../libevent-2.1-6_2.1.8-stable-4_amd64.deb'.
+FAKEROOTKEY=355495311 LD_LIBRARY_PATH=:/opt/intel/lib/intel64_lin:/opt/intel/tbb/lib/intel64/gcc4.7 LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libfakeroot/libfakeroot-sysv.so debian/rules binary
+ dpkg-genbuildinfo --build=binary
+ dpkg-genchanges --build=binary >../libevent_2.1.8-stable-4_amd64.changes
+dpkg-genchanges: info: binary-only upload (no source code included)
+ dpkg-source --after-build .
+dpkg-buildpackage: info: binary-only upload (no source included)
+Now running lintian libevent_2.1.8-stable-4_amd64.changes ...
+W: libevent-2.1-6: excessive-priority-for-library-package standard
+W: libevent-2.1-6: dev-pkg-without-shlib-symlink usr/lib/x86_64-linux-gnu/libevent-2.1.so.6.0.2 usr/lib/x86_64-linux-gnu/libevent-2.1.so
+W: libevent-extra-2.1-6: dev-pkg-without-shlib-symlink usr/lib/x86_64-linux-gnu/libevent_extra-2.1.so.6.0.2 usr/lib/x86_64-linux-gnu/libevent_extra-2.1.so
+W: libevent-core-2.1-6: dev-pkg-without-shlib-symlink usr/lib/x86_64-linux-gnu/libevent_core-2.1.so.6.0.2 usr/lib/x86_64-linux-gnu/libevent_core-2.1.so
+W: libevent-pthreads-2.1-6: dev-pkg-without-shlib-symlink usr/lib/x86_64-linux-gnu/libevent_pthreads-2.1.so.6.0.2 usr/lib/x86_64-linux-gnu/libevent_pthreads-2.1.so
+W: libevent-openssl-2.1-6: dev-pkg-without-shlib-symlink usr/lib/x86_64-linux-gnu/libevent_openssl-2.1.so.6.0.2 usr/lib/x86_64-linux-gnu/libevent_openssl-2.1.so
+Finished running lintian.

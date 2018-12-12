@@ -1,0 +1,12 @@
+./debian/Makefile.sample
+./sample/dns-example.c
+./sample/event-read-fifo.c
+./sample/hello-world.c
+./sample/hostcheck.c
+./sample/http-connect.c
+./sample/http-server.c
+./sample/https-client.c
+./sample/le-proxy.c
+./sample/openssl_hostname_validation.c
+./sample/signal-test.c
+./sample/time-test.c

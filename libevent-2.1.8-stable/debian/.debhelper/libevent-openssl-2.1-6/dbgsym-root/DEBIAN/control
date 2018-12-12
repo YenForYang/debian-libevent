@@ -1,0 +1,15 @@
+Package: libevent-openssl-2.1-6-dbgsym
+Source: libevent
+Version: 2.1.8-stable-4
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+Installed-Size: 34
+Depends: libevent-openssl-2.1-6 (= 2.1.8-stable-4)
+Breaks: libevent-dbg (<< 2.1.8-stable-1~)
+Replaces: libevent-dbg (<< 2.1.8-stable-1~)
+Section: debug
+Priority: optional
+Multi-Arch: same
+Description: debug symbols for libevent-openssl-2.1-6
+Build-Ids: 66cc4a702d09950c2125bf5320fa76e45abbf39b

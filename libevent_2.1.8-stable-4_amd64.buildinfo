@@ -1,0 +1,207 @@
+Format: 1.0
+Source: libevent
+Binary: libevent-dev libevent-2.1-6 libevent-core-2.1-6 libevent-extra-2.1-6 libevent-pthreads-2.1-6 libevent-openssl-2.1-6
+Architecture: amd64
+Version: 2.1.8-stable-4
+Checksums-Md5:
+ 61c3fa5f7c56f557dc5deb2e510468bd 345928 libevent-2.1-6-dbgsym_2.1.8-stable-4_amd64.deb
+ f69f7f550d8c24e0b7bf92e669757e4d 234520 libevent-2.1-6_2.1.8-stable-4_amd64.deb
+ ce8abe2ffce3ad0b9d50af9475719688 201368 libevent-core-2.1-6-dbgsym_2.1.8-stable-4_amd64.deb
+ aa8aa8e78ab5f5edc190fe1e721c4de4 155564 libevent-core-2.1-6_2.1.8-stable-4_amd64.deb
+ 9f410650789ae4e6ac0d36824a1436e8 4143912 libevent-dev_2.1.8-stable-4_amd64.deb
+ e8f8cdd0506001e903ddb6c46b38b81f 113520 libevent-extra-2.1-6-dbgsym_2.1.8-stable-4_amd64.deb
+ f791ed56e123b73621e082338824db34 120980 libevent-extra-2.1-6_2.1.8-stable-4_amd64.deb
+ 259aaefe7d2ec8e695c5b622a7c23e8e 17128 libevent-openssl-2.1-6-dbgsym_2.1.8-stable-4_amd64.deb
+ b84ab25048f1fcca48ea8f8882eadf85 57072 libevent-openssl-2.1-6_2.1.8-stable-4_amd64.deb
+ 7d1ae433586854aaf76895198c12132f 5556 libevent-pthreads-2.1-6-dbgsym_2.1.8-stable-4_amd64.deb
+ 6322a6b6c1fb553f97a6f37659553dd7 47852 libevent-pthreads-2.1-6_2.1.8-stable-4_amd64.deb
+Checksums-Sha1:
+ 5a36e35601471562267c5206a2ea43156b8cfebb 345928 libevent-2.1-6-dbgsym_2.1.8-stable-4_amd64.deb
+ 77f48c133e1097a13075714400b99081a421cfb8 234520 libevent-2.1-6_2.1.8-stable-4_amd64.deb
+ d57030cdcaca7722aaa9e029fc14d3f1db4d72d4 201368 libevent-core-2.1-6-dbgsym_2.1.8-stable-4_amd64.deb
+ 65247aed3162d9984bb46e2d0c3648df60f33aee 155564 libevent-core-2.1-6_2.1.8-stable-4_amd64.deb
+ aa09601568f627e784b1c75951a9ec3a1d2ae9bf 4143912 libevent-dev_2.1.8-stable-4_amd64.deb
+ b9d3a2bfa9ce11d456b764d0f027c24585df67c7 113520 libevent-extra-2.1-6-dbgsym_2.1.8-stable-4_amd64.deb
+ 7a0c5f244422aaef18f09ce88cc281a0666cb0b8 120980 libevent-extra-2.1-6_2.1.8-stable-4_amd64.deb
+ e164246888f06a2231a5f04391c8d5bb1a5b43b8 17128 libevent-openssl-2.1-6-dbgsym_2.1.8-stable-4_amd64.deb
+ 8db8ba0fe2184b407f1077ae8f75c49c2575e809 57072 libevent-openssl-2.1-6_2.1.8-stable-4_amd64.deb
+ ab443e6c5ecb54317a8d25ec48fce942cdb4af17 5556 libevent-pthreads-2.1-6-dbgsym_2.1.8-stable-4_amd64.deb
+ 67bbbff917c4a92f5680b0c17a4db335381cc696 47852 libevent-pthreads-2.1-6_2.1.8-stable-4_amd64.deb
+Checksums-Sha256:
+ f5328504b1781cc44214687b288fe41a70dfd944242df82a232aca8d010dea05 345928 libevent-2.1-6-dbgsym_2.1.8-stable-4_amd64.deb
+ 05d2f17cb2559aad36dc9a4a65c4275bc86ebf8de584e27e9984eb83d0a85309 234520 libevent-2.1-6_2.1.8-stable-4_amd64.deb
+ 63ce4ca1adabf4ab33c654463828efc1a81b891db94279023ec00bd936fb8d2a 201368 libevent-core-2.1-6-dbgsym_2.1.8-stable-4_amd64.deb
+ 82a9c19b83cc7936d7f87202180c521b3ebee1a1f44e86ed84680f8042873c34 155564 libevent-core-2.1-6_2.1.8-stable-4_amd64.deb
+ e8e4ebebbd335498943cf6e6f899c68fa269dcb1c4139947c19a06cbc0f13df1 4143912 libevent-dev_2.1.8-stable-4_amd64.deb
+ cdffcc07a896a2a2043754081d14853d9bf885f1c91560c3001b185d5ce6487d 113520 libevent-extra-2.1-6-dbgsym_2.1.8-stable-4_amd64.deb
+ 8c6c18faf25526ec764db0525b422a99ea1f7aece820cc387716b6e20fd1536c 120980 libevent-extra-2.1-6_2.1.8-stable-4_amd64.deb
+ bc8d5b99933685e50b36746c5fdbed4e7bb45aa74c3bcfe41ee0cd725a060d7c 17128 libevent-openssl-2.1-6-dbgsym_2.1.8-stable-4_amd64.deb
+ 6cfe635f61b2826026d1923d752b700d8dc0b1456dce1e6dd27b650cca1d143a 57072 libevent-openssl-2.1-6_2.1.8-stable-4_amd64.deb
+ aa417bac1a1dbb62ea977a31c57dff20e19a123af5a14e351ee8bc1686833637 5556 libevent-pthreads-2.1-6-dbgsym_2.1.8-stable-4_amd64.deb
+ b400a7dbc4a41f32f02e0f307dd8c0948543da63051f768c0834457ff896f58e 47852 libevent-pthreads-2.1-6_2.1.8-stable-4_amd64.deb
+Build-Origin: Debian
+Build-Architecture: amd64
+Build-Date: Wed, 12 Dec 2018 04:00:03 +0100
+Installed-Build-Depends:
+ autoconf (= 2.69-11),
+ automake (= 1:1.16.1-4),
+ autopoint (= 0.19.8.1-2),
+ autotools-dev (= 20180224.1),
+ base-files (= 10.1),
+ base-passwd (= 3.5.45),
+ bash (= 4.4.18-3.1),
+ binutils (= 2.31.1-10),
+ binutils-common (= 2.31.1-10),
+ binutils-x86-64-linux-gnu (= 2.31.1-10),
+ bsdmainutils (= 11.1.2+b1),
+ bsdutils (= 1:2.32.1-0.1),
+ build-essential (= 12.5),
+ bzip2 (= 1.0.6-9),
+ coreutils (= 8.30-1),
+ cpp (= 4:8.2.0-2),
+ cpp-7 (= 7.3.0-30),
+ cpp-8 (= 8.2.0-9),
+ dash (= 0.5.10.2-2),
+ debconf (= 1.5.69),
+ debhelper (= 11.5.4),
+ debianutils (= 4.8.6),
+ dh-autoreconf (= 19),
+ dh-strip-nondeterminism (= 0.45.0-1),
+ diffutils (= 1:3.6-1),
+ dpkg (= 1.19.2),
+ dpkg-dev (= 1.19.2),
+ dwz (= 0.12-2),
+ fdisk (= 2.32.1-0.1),
+ file (= 1:5.35-1),
+ findutils (= 4.6.0+git+20181018-1),
+ g++ (= 4:8.2.0-2),
+ g++-8 (= 8.2.0-9),
+ gawk (= 1:4.2.1+dfsg-1),
+ gcc (= 4:8.2.0-2),
+ gcc-7 (= 7.3.0-30),
+ gcc-7-base (= 7.3.0-30),
+ gcc-8 (= 8.2.0-9),
+ gcc-8-base (= 8.2.0-9),
+ gettext (= 0.19.8.1-2),
+ gettext-base (= 0.19.8.1-2),
+ grep (= 3.1-2),
+ groff-base (= 1.22.3-10),
+ gzip (= 1.9-2.1),
+ hostname (= 3.21),
+ init-system-helpers (= 1.56),
+ install-info (= 6.5.0.dfsg.1-4),
+ intel-comp-ps-ss-bec-19.0.1-144 (= 19.0.1-144),
+ intltool-debian (= 0.35.0+20060710.4),
+ libacl1 (= 2.2.52-3+b1),
+ libarchive-zip-perl (= 1.64-1),
+ libasan4 (= 7.3.0-30),
+ libasan5 (= 8.2.0-9),
+ libatomic1 (= 8.2.0-9),
+ libattr1 (= 1:2.4.47-2+b2),
+ libaudit-common (= 1:2.8.4-2),
+ libaudit1 (= 1:2.8.4-2),
+ libbinutils (= 2.31.1-10),
+ libblkid1 (= 2.32.1-0.1),
+ libbsd0 (= 0.9.1-1),
+ libbz2-1.0 (= 1.0.6-9),
+ libc-bin (= 2.27-8),
+ libc-dev-bin (= 2.27-8),
+ libc6 (= 2.27-8),
+ libc6-dev (= 2.27-8),
+ libcap-ng0 (= 0.7.9-1),
+ libcc1-0 (= 8.2.0-9),
+ libcilkrts5 (= 7.3.0-30),
+ libcroco3 (= 0.6.12-2),
+ libdb5.3 (= 5.3.28+dfsg1-0.2),
+ libdebconfclient0 (= 0.245),
+ libdpkg-perl (= 1.19.2),
+ libelf1 (= 0.170-0.5),
+ libfdisk1 (= 2.32.1-0.1),
+ libffi6 (= 3.2.1-9),
+ libfile-stripnondeterminism-perl (= 0.45.0-1),
+ libgcc-7-dev (= 7.3.0-30),
+ libgcc-8-dev (= 8.2.0-9),
+ libgcc1 (= 1:8.2.0-9),
+ libgcrypt20 (= 1.8.4-3),
+ libgdbm-compat4 (= 1.18.1-2),
+ libgdbm6 (= 1.18.1-2),
+ libglib2.0-0 (= 2.58.1-2),
+ libgmp10 (= 2:6.1.2+dfsg-3),
+ libgomp1 (= 8.2.0-9),
+ libgpg-error0 (= 1.32-3),
+ libicu63 (= 63.1-4),
+ libisl19 (= 0.20-2),
+ libitm1 (= 8.2.0-9),
+ liblsan0 (= 8.2.0-9),
+ liblz4-1 (= 1.8.2-1),
+ liblzma5 (= 5.2.4-1),
+ libmagic-mgc (= 1:5.35-1),
+ libmagic1 (= 1:5.35-1),
+ libmount1 (= 2.32.1-0.1),
+ libmpc3 (= 1.1.0-1),
+ libmpfr6 (= 4.0.1-1),
+ libmpx2 (= 8.2.0-9),
+ libncursesw6 (= 6.1+20181013-1),
+ libpam-modules (= 1.1.8-3.8),
+ libpam-modules-bin (= 1.1.8-3.8),
+ libpam-runtime (= 1.1.8-3.8),
+ libpam0g (= 1.1.8-3.8),
+ libpcre3 (= 2:8.39-11),
+ libperl5.28 (= 5.28.1-1),
+ libpipeline1 (= 1.5.0-2),
+ libquadmath0 (= 8.2.0-9),
+ libreadline7 (= 7.0-5),
+ libseccomp2 (= 2.3.3-3),
+ libselinux1 (= 2.8-1+b1),
+ libsigsegv2 (= 2.12-2),
+ libsmartcols1 (= 2.32.1-0.1),
+ libssl-dev (= 1.1.1a-1),
+ libssl1.1 (= 1.1.1a-1),
+ libstdc++-8-dev (= 8.2.0-9),
+ libstdc++6 (= 8.2.0-9),
+ libsystemd0 (= 239-13),
+ libtinfo5 (= 6.1+20181013-1),
+ libtinfo6 (= 6.1+20181013-1),
+ libtool (= 2.4.6-6),
+ libtsan0 (= 8.2.0-9),
+ libubsan0 (= 7.3.0-30),
+ libubsan1 (= 8.2.0-9),
+ libudev1 (= 239-13),
+ libunistring0 (= 0.9.6+really0.9.3-0.1),
+ libuuid1 (= 2.32.1-0.1),
+ libxml2 (= 2.9.8-1),
+ linux-libc-dev (= 4.18.20-2),
+ login (= 1:4.5-1.1),
+ m4 (= 1.4.18-2),
+ make (= 4.2.1-1.2),
+ man-db (= 2.8.4-3),
+ mawk (= 1.3.3-17),
+ ncurses-base (= 6.1+20181013-1),
+ ncurses-bin (= 6.1+20181013-1),
+ patch (= 2.7.6-3),
+ perl (= 5.28.1-1),
+ perl-base (= 5.28.1-1),
+ perl-modules-5.28 (= 5.28.1-1),
+ po-debconf (= 1.0.21),
+ readline-common (= 7.0-5),
+ sed (= 4.5-2),
+ sensible-utils (= 0.0.12),
+ sysvinit-utils (= 2.92~beta-2),
+ tar (= 1.30+dfsg-3),
+ util-linux (= 2.32.1-0.1),
+ xz-utils (= 5.2.4-1),
+ zlib1g (= 1:1.2.11.dfsg-1)
+Environment:
+ AR="xiar"
+ CC="icc"
+ CXX="icpc"
+ DEB_BUILD_OPTIONS="nocheck nodoc parallel=8"
+ DEB_BUILD_PROFILES="nobiarch nocheck nodoc"
+ DEB_CFLAGS_SET="-g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe"
+ DEB_CXXFLAGS_SET="-g -O2 -fdebug-prefix-map=/dev/shm/libevent/libevent-2.1.8-stable=. -fstack-protector-strong -Wformat -Werror=format-security -march=native -pipe"
+ DEB_LDFLAGS_SET="-Wl,-z,relro -Wl,--as-needed,--gc-sections,--relax"
+ LANG="en_US.UTF-8"
+ LC_CTYPE="en_US.UTF-8"
+ LD="xild"
+ LD_LIBRARY_PATH="/opt/intel/lib/intel64_lin:/opt/intel/tbb/lib/intel64/gcc4.7"
+ SOURCE_DATE_EPOCH="1501517629"

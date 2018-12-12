@@ -1,0 +1,15 @@
+Package: libevent-pthreads-2.1-6-dbgsym
+Source: libevent
+Version: 2.1.8-stable-4
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+Installed-Size: 19
+Depends: libevent-pthreads-2.1-6 (= 2.1.8-stable-4)
+Breaks: libevent-dbg (<< 2.1.8-stable-1~)
+Replaces: libevent-dbg (<< 2.1.8-stable-1~)
+Section: debug
+Priority: optional
+Multi-Arch: same
+Description: debug symbols for libevent-pthreads-2.1-6
+Build-Ids: 83387705d5bc4e137b8aed51433328fb7c53fc2b
